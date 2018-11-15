@@ -1,104 +1,203 @@
-/***** NAVBAR *****/
 .navbar-default {
-  background-color: #3a4a9f;
-  border-radius: 0;
-  background-image: none;
+    font-family: agency fb, corbel, helvetica, sans-serif;
+    font-size: 24px;
+    color: #4D4D4D;
+    background-color: white;
+    border-color: transparent;
+    box-shadow: 0px 1px 7px #888888;
 }
 
-/* Navbar title */
-.navbar-default .navbar-brand {
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
+.navbar-brand {
+    font-family: agency fb, corbel, helvetica, sans-serif;
+    font-size: 28px;
+    color: #4D4D4D;
 }
 
-/* Navbar hover effects */
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus,
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    color: #ebd122;
+#home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/hawaii.jpg);
+    background-size:cover;
+    background-position: center;
+    font-family: agency fb, corbel, helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    padding-top: 120px;
 }
 
-/* Navbar links */
-.navbar-default .navbar-nav > li > a {
-  color: #fff;
-  font-size: 16px;
+#about {
+    min-height: inherit;
+    font-family: corbel, helvetica, sans-serif;
+    color: #4D4D4D;
 }
 
-/* Navbar collapsed styles */
-.navbar-header .navbar-toggle {
-  color: #fff;
+.abouth {
+    padding-top: 7px;
+    font-weight: bold;
+    font-size: 22px;
 }
 
-.navbar-header .navbar-toggle:hover,
-.navbar-header .navbar-toggle:focus {
-  background-color: #ebd122;
-  color: #242424;
+#about-buffer {
+    padding-top: 50px;
 }
 
-/*** Portfolio pieces ***/
-.portfolio-thumbnail {
-  background-color: #fff;
-  border-color: #3a4a9f;
-  border-width: 2px;
-  width: 95%;
+.aboutp {
+    font-size: 16px;
 }
 
-.portfolio-thumbnail:hover {
-  border-color: #ebd122;
+.button {
+    background-color: #345387;
+    border: 1px solid #1e3151;
+    box-shadow: 1px 1px 7px #888888;
+    padding: 7px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
 }
 
-.portfolio-title {
-  font-weight: bold;
+.button:hover {
+    background-color: white;
+    color: #31476b;
+    text-decoration: none;
 }
 
-.portfolio-description {
+.button:active {
+    background-color: #345387;
+    border: 1px solid #1e3151;
+    box-shadow: 1px 1px 7px #888888;
+    padding: 7px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
 }
 
-.portfolio-image {
+.button:focus {
+    background-color: #345387;
+    border: 1px solid #1e3151;
+    box-shadow: 1px 1px 7px #888888;
+    padding: 7px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
 }
 
-#about-world {
-  max-height: 200px;
+#port-row-1 {
+    padding-top: 40px;
 }
 
-.resume h3 {
-  font-weight: bold;
+.title {
+    margin-top: 70px;
+    font-family: agency fb, corbel, helvetica, sans-serif;
+    text-align: center;
+    background-color: #4D4D4D;
+    color: white;
 }
 
-hr {
-  border-color: white;
-  border-width: 2px;
+.thumb {
+    max-height: 380px;
+    max-width: 380px;
+    border-radius: 10px;
+    border: 3px solid #4D4D4D;
+    box-shadow: 1px 1px 7px #888888;
+    margin-bottom: 20px;
 }
 
-p {
-  font-size: 20px;
+.thumb:hover {
+    border-color: gold;
 }
 
-a {
-  color: #3a4a9f;
+.other-pic {
+    height: 100%;
+    width: 100%;
+    max-height: 578px;
+    max-width: 450px;
+    border-radius: 10px;
+    border: 3px solid #4D4D4D;
+    box-shadow: 1px 1px 7px #888888;
 }
 
-a:hover {
-  color: #ebd122;
+#contact-row {
+    padding-top: 20px;
+    min-height: 580px;
 }
 
-.jumbotron {
-  background-image: url("../assets/contour-lines.png");
-  text-align: center;
-  color: #fff;
-  padding: 2%;
+#contact {
+    font-family: corbel, helvetica, sans-serif;
+    font-size: 18px;
+    color: #4D4D4D;
+    font-weight: bold;
 }
 
-.jumbotron h2 {
-  font-size: 36px;
-  font-weight: bold;
+.tiny {
+    height: 55px;
+    width: 55px;
 }
 
-body {
-  padding-top: 50px;
-  font-family: 'Tw Cen MT Condensed', sans-serif;
-  background-color: whitesmoke;
-  color: #242424;
+#text-box-web {
+    display: table;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    padding-top: 200px;
+}
+
+#text-box-mobile {
+    display: table;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#spanning {
+    display: inline;
+    vertical-align: middle;
+    letter-spacing: normal;
+}
+
+@media screen and (max-width : 768px){
+    .desk{
+        display: none;
+    }
+    .div-only-mobile{
+        visibility:visible;
+    }
+}
+
+@media screen and (min-width : 769px){
+    .div-only-mobile{
+        display: none;
+    }
+    .desk {
+        display: visible;
+    }
+}
+
+.shadow {
+    text-shadow: 1px 1px black;
+    text-align: center;
+}
+
+.js-scroll {
+    text-align: center;
+}
+
+#scroll-button {
+    width: 60px;
+    height: 60px;
+    opacity: .7;
+}
+
+.caption {
+    font-family: corbel, helvetica, sans-serif;
+    font-size: 12pt;
+    color: #4D4D4D;
+    padding-top: 80px;
+    text-align: left;
+    margin-right: 20px;
 }
