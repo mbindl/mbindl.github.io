@@ -1,5 +1,5 @@
 .navbar-default {
-    font-family: agency fb, corbel, helvetica, sans-serif;
+    font-family: Tw Cen MT Condensed, sans-serif;
     font-size: 24px;
     color: #4D4D4D;
     background-color: white;
@@ -8,7 +8,7 @@
 }
 
 .navbar-brand {
-    font-family: agency fb, corbel, helvetica, sans-serif;
+    font-family: Tw Cen MT Condensed, sans-serif;
     font-size: 28px;
     color: #4D4D4D;
 }
@@ -19,7 +19,7 @@
     background-image: url(/assets/hawaii.jpg);
     background-size:cover;
     background-position: center;
-    font-family: agency fb, corbel, helvetica, sans-serif;
+    font-family: Tw Cen MT Condensed, sans-serif;
     color: white;
     text-align: center;
     font-size: 36px;
@@ -28,7 +28,7 @@
 
 #about {
     min-height: inherit;
-    font-family: corbel, helvetica, sans-serif;
+    font-family: Tw Cen MT Condensed Extra Bold, sans-serif;
     color: #4D4D4D;
 }
 
@@ -91,7 +91,7 @@
 
 .title {
     margin-top: 70px;
-    font-family: agency fb, corbel, helvetica, sans-serif;
+    font-family: Tw Cen MT Condensed, sans-serif;
     text-align: center;
     background-color: #4D4D4D;
     color: white;
@@ -126,7 +126,7 @@
 }
 
 #contact {
-    font-family: corbel, helvetica, sans-serif;
+    font-family: Tw Cen MT Condensed, sans-serif;
     font-size: 18px;
     color: #4D4D4D;
     font-weight: bold;
@@ -194,7 +194,7 @@
 }
 
 .caption {
-    font-family: corbel, helvetica, sans-serif;
+    font-family: Tw Cen MT Condensed, sans-serif;
     font-size: 12pt;
     color: #4D4D4D;
     padding-top: 80px;
