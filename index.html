@@ -17,11 +17,11 @@
         <meta name="author" content="Mason Bindl">
     
         <title>Mason Bindl</title>
-        <link rel="icon" href="assets/mb_icon.ico">
+        <link href="assets/mb_icon.ico" rel="icon" >
 
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/bootstrap.css" rel="stylesheet">
-        <link rel='stylesheet' href='css/style.css'/>
+        <link href="css/style.css" rel="stylesheet">
     
     <script src="lib/jquery-3.3.1.js"></script>
     <script src="lib/bootstrap.min.js"></script>
@@ -29,25 +29,30 @@
 	</head>
 
 	<body>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Mason Bindl</a>
-    </div>
-    <ul class="nav navbar-nav navbar-right">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="resume.html">Resume</a></li>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">MTB</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="resume.html">Resume</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
     </ul>
   </div>
-</nav> 
+</nav>
 
-		<div class="jumbotron">
-			<div class="container">
-				<h2>Mason Bindl | Cartographer</h2>
-				<p>Creative. Crafty. Coordinated.</p>
-			</div>
-		</div>
+<div class="jumbotron">
+    <div class="container">
+        <h2>Mason Bindl | GIS Analyst</h2>
+        <p>Creative. Crafty. Coordinated.</p>
+    </div>
+</div>
 <!--PORTFOLIO-->
 
 <div id = "portfolio" class = "container-fluid">
