@@ -32,49 +32,8 @@
     color: #4D4D4D;
 }
 
-.abouth {
-    padding-top: 7px;
-    font-weight: bold;
-    font-size: 22px;
-}
-
-#about-buffer {
-    padding-top: 50px;
-}
-
-.aboutp {
-    font-size: 16px;
-}
 
 .button {
-    background-color: #345387;
-    border: 1px solid #1e3151;
-    box-shadow: 1px 1px 7px #888888;
-    padding: 7px;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 10px;
-}
-
-.button:hover {
-    background-color: white;
-    color: #31476b;
-    text-decoration: none;
-}
-
-.button:active {
-    background-color: #345387;
-    border: 1px solid #1e3151;
-    box-shadow: 1px 1px 7px #888888;
-    padding: 7px;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 10px;
-}
-
-.button:focus {
     background-color: #345387;
     border: 1px solid #1e3151;
     box-shadow: 1px 1px 7px #888888;
@@ -97,29 +56,17 @@
     color: white;
 }
 
-.thumb {
-    height: 75%;
-    width: 50%;   
-    max-height: 280px;
+.thumb {  
+    max-height: 2550px;
     max-width: 180px;
-    border-radius: 10px;
+    border-radius: 6px;
     border: 3px solid #4D4D4D;
     box-shadow: 1px 1px 7px #888888;
     margin-bottom: 20px;
 }
 
 .thumb:hover {
-    border-color: gold;
-}
-
-.other-pic {
-    height: 100%;
-    width: 100%;
-    max-height: 578px;
-    max-width: 450px;
-    border-radius: 10px;
-    border: 3px solid #4D4D4D;
-    box-shadow: 1px 1px 7px #888888;
+    border-color: #345387;
 }
 
 #contact-row {
@@ -139,22 +86,6 @@
     width: 55px;
 }
 
-#text-box-web {
-    display: table;
-    height: 100px;
-    width: 100%;
-    text-align: center;
-    padding-top: 200px;
-}
-
-#text-box-mobile {
-    display: table;
-    height: 100px;
-    width: 100%;
-    text-align: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
 
 #spanning {
     display: inline;
@@ -193,13 +124,4 @@
     width: 60px;
     height: 60px;
     opacity: .7;
-}
-
-.caption {
-    font-family: Tw Cen MT Condensed, sans-serif;
-    font-size: 12pt;
-    color: #4D4D4D;
-    padding-top: 80px;
-    text-align: left;
-    margin-right: 20px;
 }
