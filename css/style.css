@@ -51,6 +51,8 @@
     border: 3px solid #4D4D4D;
     box-shadow: 1px 1px 7px #888888;
     margin-bottom: 20px;
+    margin: 20px auto;    
+    display: block;
 }
 
 .thumb:hover {
