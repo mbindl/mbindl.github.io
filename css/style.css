@@ -79,7 +79,7 @@
     height: 100px;
     width: 100%;
     text-align: center;
-    padding-top:100px;
+    padding-top:10px;
 }
 
 #links-mobile {
@@ -88,7 +88,7 @@
     width: 100%;
     text-align: center;
     padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 #spanning {
