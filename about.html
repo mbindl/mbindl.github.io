@@ -11,31 +11,34 @@
 	</head>
 
 	<body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="../index.html" >MTB</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<nav class="navbar navbar-dark navbar-expand-sm" style="background-color: #6c83b5;">
+            <div class="container">
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="../resume.html">Resume</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-
+                <a href="../index.html" class="navbar-brand">MTB</a>
+    
+                <button class = "navbar-toggler" type="button" data-toggle ="collapse" data-target="#myToggle" aria-controls="myToggle" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+      
+                <div class = "collapse navbar-collapse" id="myToggle">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link align-right" href="../about.html">About</a>
+                        <a class="nav-item nav-link align-right" href="../resume.html">Resume</a>
+                        <a class="nav-item nav-link align-right" href="#contact">Contact</a>
+                    </div><!-- navbar -->
+                </div><!-- collapse -->
+            </div><!-- container -->
+        </nav><!-- nav -->
+        
 		<div class="jumbotron">
 			<div class="container">
-				<h2>Who am I, you ask?</h2>
+				<h2>About Me</h2>
 			</div>
 		</div>
 
 		<div class="container">
-			<div class="row">
-				<div class="col-md-9 col-md-offset-0 col-sm-9 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+			<div class="row align-left">
+				<div class="col-lg-6">
 						<p>
 			                 I am Mason Bindl. I currently work for the Tahoe Regional Planning Agency as a GIS Analyst. I'm also studying GIS Web Development at the University of Wisconsin-Madison.
 						</p>
@@ -51,6 +54,31 @@
 				</div>
 			</div>
 		</div>
+<div id = "contact" class = "container-fluid">
+    <h1 class="title">Contact</h1>
+    <div id="contact-row" class = "row">
+        <div class="col desk">
+            <div id="links-web">
+                <span id="spanning">
+                <p>masonbindl@gmail.com</p>
+                    <a href="https://www.linkedin.com/in/masonbindl/" target="_blank"><img class="minilogo" alt="Linkedin" src="assets/linkedin_thumb.svg"/></a>
+                    <a href="https://github.com/mbindl" target="_blank"><img class="minilogo" alt="GitHub" src="assets/git_thumb.svg"/></a>
+                    <a href="https://twitter.com/masonbindl" target="_blank"><img class="minilogo" alt="Twitter" src="assets/twitter_thumb.svg"/></a>
+                </span>
+            </div>
+        </div>
+        <div class="col div-only-mobile">
+            <div id="links-mobile">
+                <span id="spanning">
+                    <p>masonbindl@gmail.com</p>
+                    <a href="https://www.linkedin.com/in/masonbindl/" target="_blank"><img class="minilogo" alt="Linkedin" src="assets/linkedin_thumb.svg"/></a>
+                    <a href="https://github.com/mbindl" target="_blank"><img class="minilogo" alt="GitHub" src="assets/git_thumb.svg"/></a>
+                    <a href="https://twitter.com/masonbindl" target="_blank"><img class="minilogo" alt="Twitter" src="assets/twitter_thumb.svg"/></a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
 		<script type="text/javascript" src="lib/jquery-3.3.1.js"></script>
 		<script type="text/javascript" src="lib/bootstrap.min.js"></script>
 	</body>
