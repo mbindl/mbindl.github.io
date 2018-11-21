@@ -123,6 +123,10 @@
 .align-center {
     text-align: center;
 }
+
+.max-width{
+    max-width: 450px
+}
 #scroll-button {
     width: 60px;
     height: 60px;
