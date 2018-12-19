@@ -30,14 +30,14 @@
     background-image: url("../assets/contours.png");
     text-align: center;
     color: #4D4D4D;
-    padding: 2%;
+    padding: 5%;
 }
 #row-1 {
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .title {
-    margin-top: 20px;
+    margin-top: 5px;
     font-family: Tw Cen MT Condensed, sans-serif;
     text-align: center;
     background-color: #6c83b5;
