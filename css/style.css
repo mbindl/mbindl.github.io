@@ -132,3 +132,7 @@
     height: 60px;
     opacity: .7;
 }
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
