@@ -25,19 +25,20 @@
 }
 .jumbotron {
     background-color: #fff;
-    background-position: center;
-    background-size: cover; 
+    background-position: bottom;
+    background-size:cover; 
     background-image: url("../assets/contours.png");
     text-align: center;
     color: #4D4D4D;
     padding: 5%;
+    margin-bottom: 0;
 }
 #row-1 {
     padding-top: 10px;
 }
 
 .title {
-    margin-top: 5px;
+    margin-top: 0px;
     font-family: Tw Cen MT Condensed, sans-serif;
     text-align: center;
     background-color: #6c83b5;
