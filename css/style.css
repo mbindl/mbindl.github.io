@@ -140,3 +140,9 @@
 #info-graphic {
     width: 100%;
 }
+/* lg */
+@media (min-width: 1200px) {
+    img {
+        width: 75%;
+    }
+}
