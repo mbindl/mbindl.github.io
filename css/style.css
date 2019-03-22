@@ -33,6 +33,7 @@
     padding: 5%;
     margin-bottom: 0;
 }
+
 #row-pad {
     padding-bottom: 15px;
 }
@@ -45,8 +46,8 @@
 }
 
 .thumb {  
-    max-height: 500px;
-    max-width: 400px;
+    max-height: 420px;
+    max-width: 340px;
     border-radius: 6px;
     border: 3px solid #4D4D4D;
     box-shadow: 1px 1px 7px #888888;
