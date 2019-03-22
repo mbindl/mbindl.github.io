@@ -36,7 +36,9 @@
 #row-1 {
     padding-top: 10px;
 }
-
+#row-2 {
+    padding-bottom: 15px;
+}
 .title {
     margin-top: 0px;
     font-family: Tw Cen MT Condensed, sans-serif;
