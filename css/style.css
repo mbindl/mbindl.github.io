@@ -146,3 +146,287 @@
         width: 75%;
     }
 }
+
+
+/* !!! bootstrap defaults to @xs devices <768px !!! */
+
+body {
+	padding-top: 51px;
+	/* navbar is 51px for @xs devices */
+	background-color: white;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+/* h2 intended for section headers (e.g., Portfolio) on landing page */
+h2 {
+	font-size: 22px;
+	font-weight: 700;
+	margin-top: 0;
+}
+/* h3 intended for portfolio thumbnail caption headers on landing page */
+h3 {
+	font-size: 18px;
+	font-weight: 600;
+}
+p {
+	font-weight: 300;
+}
+hr {
+	border-top: 1px solid #e7e7e7;
+	/* border-top defaults to 1px solid #eee */
+}
+.navbar-default {
+	background-color: white;
+	/* background-color defaults to: #f8f8f8 */
+	box-shadow: 0 1px 1px #eee;
+}
+.navbar-default .navbar-brand {
+	/* font-size defaults to 18px; */
+	font-weight: 700;
+	color: #333;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+	/* defaults:
+	color: #5e5e5e; */
+}
+.navbar-default .navbar-nav>li>a {
+	/* defaults:
+	color: #777;
+	font-size: 14px;
+	font-weight: 400;
+	text-decoration: none; */
+}
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+	/* defaults:
+	color: #333;
+	background-color: transparent;
+	text-decoration: none; */
+}
+.navbar-default .navbar-nav .fab,
+.navbar-default .navbar-nav .fas {
+	font-size: 24px;
+}
+.navbar-default .navbar-nav .fab:hover,
+.navbar-default .navbar-nav .fas:hover {
+	color: #5e5e5e;
+}
+/* Font Awesome icon fill color */
+.fab,
+.far,
+.fas {
+	color: #333;
+}
+.jumbotron {
+	background: #fafafa;
+	color: #333;
+	text-align: center;
+	padding-top: 10px;
+	/* h1 margin-top is 20px creating 30px total between navbar bottom and h1 top */
+	/* padding-bottom is automatically 30px for @xs devices; only needs to be manually set for @sm devices in media query below */
+	border-bottom: 1px solid #e7e7e7;
+}
+.jumbotron h1 {
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 1.3;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.jumbotron h6 {
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.4;
+	margin: 0 0 15px 0;
+}
+
+.jumbotron p {
+	font-size: 16px;
+	margin: 0 0 15px 0;
+}
+/*.jumbotron ul {
+	margin-bottom: 10px;
+}*/
+.jumbotron .about-me p {
+	font-weight: 300;
+	text-align: left;
+	margin: 0 0 10px 0;
+}
+.jumbotron .about-me-icon {
+	padding-right: 0;
+}
+.jumbotron .about-me-icon p {
+	margin: 0 0 5px 0;
+}
+.jumbotron .connecting {
+	margin-top: 15px;
+}
+.jumbotron.portfolio-page,
+.jumbotron.resume-page,
+.jumbotron.about-page {
+	padding-bottom: 10px;
+	margin-bottom: 0;
+}
+section {
+	/*background-color: #fafafa;*/
+	padding-top: 71px;
+	/* navbar is 51px for @xs devices + 20px equal to caption margin-top = 71px */
+	/*border-top: 1px solid #e7e7e7;*/
+	/*border-bottom: 1px solid #e7e7e7;*/
+	margin-top: -71px;
+	/* equivalent positive padding-top and negative margin-top resolves section linking spacing issue with navbar-fixed-top
+	https://stackoverflow.com/questions/14304309/bootstrap-link-to-section-title-hidden-by-navbar-fixed-top */
+}
+.section-header {
+	margin-bottom: 20px;
+}
+.section-header p {
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.thumbnail {
+	border: 4px solid #efefef;
+	margin-bottom: 0;
+}
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail:active {
+	/*border-color: #61aee9;*/
+	border-color: #5abaf7;
+}
+.caption {
+	padding: 0 4px 0 4px;
+	margin: 10px 0 20px 0;
+}
+.caption h3 {
+	margin-top: 0px;
+}
+.caption p {
+	font-size: 14px;
+	margin-bottom: 0;
+}
+#portfolio {
+	margin-bottom: 30px;
+}
+.container.portfolio-page,
+.container.resume-page,
+.container.about-page {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.container.resume-page hr {
+	margin-bottom: 30px;
+	/* margin-bottom defaults to 20px; increased to 30px to account for 10px margin-bottom of p above each hr line */
+}
+.container.portfolio-page p,
+.container.resume-page p,
+.container.about-page p {
+	font-size: 16px;
+}
+.container.resume-page li p {
+	margin-bottom: 5px;
+}
+.container.portfolio-page a,
+.container.resume-page a,
+.container.about-page a {
+	color: #333;
+	text-decoration: none;
+	box-shadow: inset 0 -2px 0 #5abaf7;
+}
+.container.portfolio-page a:hover,
+.container.portfolio-page a:focus,
+.container.resume-page a:hover,
+.container.resume-page a:focus,
+.container.about-page a:hover,
+.container.about-page a:focus {
+	color: #0A7BC2;
+	text-decoration: none;
+	box-shadow: inset 0 -2px 0 #5abaf7;
+}
+.container.portfolio-page img {
+	padding-top: 10px;
+	/*box-shadow: 10px 5px 5px black;*/
+}
+.container.portfolio-page p.image-caption {
+	text-align: center;
+	padding-top: 10px;
+}
+.container.about-page img {
+	border: 4px solid #efefef;
+	border-radius: 4px;
+	padding: 4px;
+	margin-bottom: 20px;
+}
+.container.about-page img.about-left {
+	margin-right: 0;
+}
+.container.about-page img.about-right {
+	margin-left: 0;
+}
+.footer {
+/*	position: ;
+	bottom: 0;
+	width: 100%;*/
+	background-color: #fafafa;
+	/*text-align: right;*/
+	padding-top: 5px;
+	border-top: 1px solid #e7e7e7;
+}
+.footer .left-align {
+	float: left;
+	text-align: left;
+}
+.footer .right-align {
+	float: right;
+	text-align: right;
+}
+.footer a {
+	color: #777;
+}
+.footer a:hover,
+.footer a:focus {
+	color: #333;
+	/*color: #5abaf7;*/
+	text-decoration: none;
+}
+/* @screen-sm-min */
+@media (min-width: 768px) {
+	body {
+		padding-top: 57px;
+		/* navbar is 57px for @sm devices >=768px */
+	}
+	h2 {
+		font-size: 28px;
+	}
+	.jumbotron {
+		padding-bottom: 30px;
+	}
+	.jumbotron h1 {
+		font-size: 28px;
+	}
+	.jumbotron h6 {
+		font-size: 16px;
+	}
+	.jumbotron p {
+		font-size: 18px;
+		margin: 0 0 20px 0;
+	}
+	.container.portfolio-page img {
+		padding-top: 15px;
+		/*padding-right: 10%;*/
+		/*padding-left: 10%;*/
+	}
+	section {
+		padding-top: 77px;
+		/* navbar is 57px for @sm devices + 20px equal to caption margin-top = 77px */
+		margin-top: -77px;
+		/* equivalent positive padding-top and negative margin-top resolves section linking spacing issue with navbar-fixed-top
+		https://stackoverflow.com/questions/14304309/bootstrap-link-to-section-title-hidden-by-navbar-fixed-top */
+	}
+}
+/* @screen-md-min */
+@media (min-width: 992px) {
+	.jumbotron .about-me {
+		padding-left: 0;
+	}
+}
