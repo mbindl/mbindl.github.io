@@ -3,31 +3,63 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Mason T Bindl</title>
+		
+        <title>Mason T Bindl</title>
         <link href="../assets/mb_icon.ico" rel="icon" >
 		<link rel="stylesheet" href="../css/bootstrap.min.css">
 		<link rel="stylesheet" href="../css/style.css">
+        <script src="https://kit.fontawesome.com/00ad3ce01f.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/bootstrap.css" rel="stylesheet">
+        <link href="../css/style.css" rel="stylesheet">
 	</head>
 
 	<body>
-        <nav class="navbar navbar-dark navbar-expand-sm" style="background-color: #6c83b5;">
-            <div class="container">
+        <nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Mason Bindl</a>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="#portfolio">Portfolio</a>
+						</li>
+						<li>
+							<a href="../about.html">About</a>
+						</li>
+						<li>
+							<a href="../resume.html">Resume</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="https://www.linkedin.com/in/masonbindl">
+								<i class="fab fa-linkedin"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/mbindl">
+								<i class="fab fa-github-square"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/masonbindl">
+								<i class="fab fa-twitter-square"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
-                <a href="../index.html" class="navbar-brand">MTB</a>
-    
-                <button class = "navbar-toggler" type="button" data-toggle ="collapse" data-target="#myToggle" aria-controls="myToggle" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-      
-                <div class = "collapse navbar-collapse" id="myToggle">
-                    <div class="navbar-nav ml-auto">
-                        <a class="nav-item nav-link align-right" href="../about.html">About</a>
-                        <a class="nav-item nav-link align-right" href="../resume.html">Resume</a>
-                        <a class="nav-item nav-link align-right" href="#contact">Contact</a>
-                    </div><!-- navbar -->
-                </div><!-- collapse -->
-            </div><!-- container -->
-        </nav><!-- nav -->
 		<div class="container-fluid">
 			<div class="align-center">
                 <h2 class="portfolio-title">A Forest at Risk - Lake Tahoe's West Shore</h2>
@@ -48,34 +80,14 @@
                 </div>
             </div>
 		</div>
-    <div id = "contact" class = "container-fluid no-padding">
-    <h1 class="title">Contact</h1>
-    <div id="contact-row" class = "row">
-        <div class="col desk">
-            <div id="links-web">
-                <span id="spanning">
-                <p>masonbindl@gmail.com</p>
-                    <a href="https://www.linkedin.com/in/masonbindl/" target="_blank"><img class="minilogo" alt="Linkedin" src="../assets/linkedin_thumb.svg"/></a>
-                    <a href="https://github.com/mbindl" target="_blank"><img class="minilogo" alt="GitHub" src="../assets/git_thumb.svg"/></a>
-                    <a href="https://twitter.com/masonbindl" target="_blank"><img class="minilogo" alt="Twitter" src="../assets/twitter_thumb.svg"/></a>
-                </span>
-            </div>
-        </div>
-        <div class="col div-only-mobile">
-            <div id="links-mobile">
-                <span id="spanning">
-                    <p>masonbindl@gmail.com</p>
-                    <a href="https://www.linkedin.com/in/masonbindl/" target="_blank"><img class="minilogo" alt="Linkedin" src="../assets/linkedin_thumb.svg"/></a>
-                    <a href="https://github.com/mbindl" target="_blank"><img class="minilogo" alt="GitHub" src="../assets/git_thumb.svg"/></a>
-                    <a href="https://twitter.com/masonbindl" target="_blank"><img class="minilogo" alt="Twitter" src="../assets/twitter_thumb.svg"/></a>
-                </span>
-            </div>
+<footer class="footer">
+    <div class="container">
+        <div class="text-muted right-align">
+            <p><small>© 2019 Mason Bindl</small></p>
         </div>
     </div>
-</div>
-        
-		<script type="text/javascript" src="../lib/jquery-3.3.1.js"></script>
-		<script type="text/javascript" src="../lib/bootstrap.min.js"></script>
-        
+</footer>
+		<script type="text/javascript" src="lib/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="lib/bootstrap.min.js"></script>
 	</body>
 </html>
