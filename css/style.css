@@ -69,13 +69,6 @@ hr {
 	color: #333;
 }
 .jumbotron {
-    background-color: #fff;
-    background-position: center;
-    background-size: cover; 
-    background-image: url("../assets/contours.png");
-    text-align: center;
-    color: #4D4D4D;
-    padding: 5%;
 	background: #fafafa;
 	color: #333;
 	text-align: center;
