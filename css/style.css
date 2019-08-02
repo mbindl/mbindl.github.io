@@ -69,6 +69,13 @@ hr {
 	color: #333;
 }
 .jumbotron {
+    background-color: #fff;
+    background-position: center;
+    background-size: cover; 
+    background-image: url("../assets/contours.png");
+    text-align: center;
+    color: #4D4D4D;
+    padding: 5%;
 	background: #fafafa;
 	color: #333;
 	text-align: center;
@@ -117,7 +124,14 @@ hr {
 .jumbotron.about-page {
 	padding-bottom: 10px;
 	margin-bottom: 0;
+
 }
+/*
+.jumbo-image{
+    background-image: url("../assets/contours.emf");
+    background-size: cover;
+}
+*/
 section {
 	/*background-color: #fafafa;*/
 	padding-top: 71px;
