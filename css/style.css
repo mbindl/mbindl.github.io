@@ -4,7 +4,7 @@
 body {
 	padding-top: 51px;
 	/* navbar is 51px for @xs devices */
-	background-color: #969eac;
+	background-color: #f9f9f9;
 	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 /* h2 intended for section headers (e.g., Portfolio) on landing page */
@@ -12,17 +12,17 @@ h2 {
 	font-size: 22px;
 	font-weight: 700;
 	margin-top: 0;
-    color: #f9f9f9;
+    color: #333;
 }
 /* h3 intended for portfolio thumbnail caption headers on landing page */
 h3 {
 	font-size: 18px;
 	font-weight: 600;
-     color: #f9f9f9;
+     color: #333;
 }
 p {
 	font-weight: 300;
-     color: #f9f9f9;
+     color: #333;
 }
 hr {
 	border-top: 1px solid #e7e7e7;
@@ -72,7 +72,7 @@ hr {
 	color: #f9f9f9;
 }
 .jumbotron {
-	background: #6680a8;
+	background: #E6E6E1;
 	color: #333;
 	text-align: center;
 	padding-top: 10px;
