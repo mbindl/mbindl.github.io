@@ -1,6 +1,3 @@
-
-/* !!! bootstrap defaults to @xs devices <768px !!! */
-
 body {
 	padding-top: 51px;
 	/* navbar is 51px for @xs devices */
@@ -25,7 +22,7 @@ p {
      color: #333;
 }
 hr {
-	border-top: 1px solid #e7e7e7;
+	border-top: 1px solid #969eac;
 	/* border-top defaults to 1px solid #eee */
 }
 .navbar-default {
@@ -36,7 +33,7 @@ hr {
 .navbar-default .navbar-brand {
 	/* font-size defaults to 18px; */
 	font-weight: 700;
-	color: #f9f9f9;
+	color: #969eac;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -66,19 +63,18 @@ hr {
 	color: #969eac;
 }
 /* Font Awesome icon fill color */
-.fab,
+.fab{
+    color: #969eac;
+}
 .far,
 .fas {
-	color: #f9f9f9;
+	color: #333;
 }
 .jumbotron {
 	background: #E6E6E1;
 	color: #333;
 	text-align: center;
 	padding-top: 10px;
-	/* h1 margin-top is 20px creating 30px total between navbar bottom and h1 top */
-	/* padding-bottom is automatically 30px for @xs devices; only needs to be manually set for @sm devices in media query below */
-/*	border-bottom: 1px solid #e7e7e7;*/
 }
 .jumbotron h1 {
 	font-size: 22px;
@@ -98,20 +94,7 @@ hr {
 	font-size: 16px;
 	margin: 0 0 15px 0;
 }
-/*.jumbotron ul {
-	margin-bottom: 10px;
-}*/
-.jumbotron .about-me p {
-	font-weight: 300;
-	text-align: left;
-	margin: 0 0 10px 0;
-}
-.jumbotron .about-me-icon {
-	padding-right: 0;
-}
-.jumbotron .about-me-icon p {
-	margin: 0 0 5px 0;
-}
+
 .jumbotron .connecting {
 	margin-top: 15px;
 }
@@ -122,22 +105,17 @@ hr {
 	margin-bottom: 0;
 
 }
-/*
 .jumbo-image{
     background-image: url("../assets/contours.emf");
     background-size: cover;
 }
-*/
+/*
 section {
-	/*background-color: #fafafa;*/
+	background-color: #fafafa;
 	padding-top: 71px;
-	/* navbar is 51px for @xs devices + 20px equal to caption margin-top = 71px */
-	/*border-top: 1px solid #e7e7e7;*/
-	/*border-bottom: 1px solid #e7e7e7;*/
 	margin-top: -71px;
-	/* equivalent positive padding-top and negative margin-top resolves section linking spacing issue with navbar-fixed-top
-	https://stackoverflow.com/questions/14304309/bootstrap-link-to-section-title-hidden-by-navbar-fixed-top */
 }
+*/
 .section-header {
 	margin-bottom: 20px;
 }
@@ -152,7 +130,6 @@ section {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail:active {
-	/*border-color: #61aee9;*/
 	border-color: #3e72b0;
 }
 .caption {
@@ -177,7 +154,6 @@ a.thumbnail:active {
 }
 .container.resume-page hr {
 	margin-bottom: 30px;
-	/* margin-bottom defaults to 20px; increased to 30px to account for 10px margin-bottom of p above each hr line */
 }
 .container.portfolio-page p,
 .container.resume-page p,
@@ -190,7 +166,7 @@ a.thumbnail:active {
 .container.portfolio-page a,
 .container.resume-page a,
 .container.about-page a {
-	color: #f9f9f9;
+	color: #333;
 	text-decoration: none;
 	box-shadow: inset 0 -2px 0 #5abaf7;
 }
@@ -242,12 +218,11 @@ a.thumbnail:active {
 	text-align: right;
 }
 .footer a {
-	color: #777;
+	color: #969eac;
 }
 .footer a:hover,
 .footer a:focus {
-	color: #333;
-	/*color: #5abaf7;*/
+	color: #969eac;
 	text-decoration: none;
 }
 /* @screen-sm-min */
@@ -260,7 +235,7 @@ a.thumbnail:active {
 		font-size: 28px;
 	}
 	.jumbotron {
-		padding-bottom: 30px;
+		padding-bottom: 20px;
 	}
 	.jumbotron h1 {
 		font-size: 28px;
