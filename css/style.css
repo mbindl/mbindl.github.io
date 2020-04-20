@@ -105,6 +105,10 @@ hr {
 	margin-bottom: 0;
 
 }
+
+.banner{
+    padding-top: 35px;
+}
 /*
 .jumbo-image{
     background-image: url("../assets/contours.emf");
