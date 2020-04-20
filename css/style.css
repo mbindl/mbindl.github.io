@@ -107,7 +107,7 @@ hr {
 }
 
 .banner{
-    padding-top: 35px;
+    margin-top: 40px;
 }
 /*
 .jumbo-image{
@@ -148,6 +148,9 @@ a.thumbnail:active {
 .caption p {
 	font-size: 14px;
 	margin-bottom: 0;
+}
+.foottext{
+    	color: #969eac;
 }
 #portfolio {
 	margin-bottom: 30px;
