@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Shaded Relief of Tahoe · Mason Bindl</title>
-  <meta name="description" content="Hand-crafted terrain relief map of the Lake Tahoe basin designed as a mountain bike race course reference map concept.">
+  <title>Historic Imagery Swipe · Mason Bindl</title>
+  <meta name="description" content="Interactive web map comparing current and historic aerial imagery of Lake Tahoe using a swipe interface.">
   <link rel="icon" href="/assets/mb_icon.ico">
 
   <!-- Fonts -->
@@ -61,16 +61,16 @@
         <i class="fa-solid fa-arrow-left fa-xs"></i> All projects
       </a>
       <div class="project-tags" style="margin-bottom:0.875rem;">
-        <span class="tag tag-carto">Cartography</span>
-        <span class="tag tag-print">Print</span>
+        <span class="tag tag-webmap">Web Map</span>
+        <span class="tag tag-trpa">TRPA</span>
       </div>
-      <h1>Shaded Relief of Tahoe</h1>
+      <h1>Historic Imagery Swipe</h1>
       <p style="color:rgba(242,237,228,0.6);font-size:1rem;max-width:560px;line-height:1.7;margin-bottom:0;">
-        A hand-crafted terrain relief map of the Lake Tahoe basin — designed as a concept reference map for a mountain bike circumnavigation of the lake.
+        Drag the swipe bar to compare current imagery with historic aerial photography of the Lake Tahoe basin — revealing decades of change to shoreline, forest, and development.
       </p>
       <div class="project-detail-links">
-        <a href="../assets/tahoeShadedRelief.png" target="_blank" rel="noopener" class="project-detail-link project-detail-link-primary">
-          <i class="fa-solid fa-expand fa-xs"></i> Full Resolution
+        <a href="https://masonbindl.com/TahoeSwipe/" target="_blank" rel="noopener" class="project-detail-link project-detail-link-primary">
+          <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i> View Live
         </a>
       </div>
     </div>
@@ -84,18 +84,25 @@
         <!-- Main -->
         <div class="col-lg-8">
 
-          <!-- Full map image -->
+          <!-- Screenshot -->
           <div class="project-detail-img-wrap">
-            <a href="../assets/tahoeShadedRelief.png" target="_blank" rel="noopener" title="Open full resolution">
-              <img src="../assets/tahoeShadedRelief.png" alt="Shaded Relief of Lake Tahoe mountain bike map">
-            </a>
+            <img src="../assets/HistoricSwipe_thumbnail.png" alt="Historic Imagery Swipe screenshot">
           </div>
+
+          <!-- Live embed -->
+          <span class="detail-section-label">// live preview</span>
+          <iframe
+            src="https://masonbindl.com/TahoeSwipe/"
+            class="project-map-embed"
+            title="Historic Imagery Swipe live map"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
 
           <!-- Description -->
           <span class="detail-section-label">// about this project</span>
-          <p>I live in Tahoe and love to mountain bike. This map started as a personal project — I wanted to visualize a route circumnavigating Lake Tahoe by singletrack and fire road, and a standard basemap didn't do the terrain justice.</p>
-          <p>The hillshade and terrain layers were generated in ArcGIS Pro using a high-resolution DEM. The shaded relief was refined and color-graded in Photoshop to bring out the topographic drama of the basin. The final graphic — including route annotation, typography, and layout — was assembled in Adobe Illustrator.</p>
-          <p>The result is a map that reads first as terrain art and second as a functional route reference. Click the image or the button above to view the full-resolution version.</p>
+          <p>This interactive web map uses a split-screen swipe interface to overlay current high-resolution aerial imagery against historic photography of the Lake Tahoe region. Users can drag a divider to reveal and compare the two time periods side by side at any zoom level.</p>
+          <p>The tool was built to support TRPA's public outreach and environmental monitoring efforts — helping staff and stakeholders visualize land cover change, shoreline erosion, forest density shifts, and development patterns over time.</p>
         </div>
 
         <!-- Sidebar -->
@@ -103,24 +110,29 @@
           <div class="detail-sticky">
 
             <div class="sidebar-card">
-              <span class="detail-section-label">// type</span>
-              <p style="margin:0;font-size:0.9rem;">Print Map · Terrain Cartography · Personal Project</p>
+              <span class="detail-section-label">// organization</span>
+              <p style="margin:0;font-size:0.9rem;">Tahoe Regional Planning Agency</p>
             </div>
 
             <div class="sidebar-card">
-              <span class="detail-section-label">// tools</span>
+              <span class="detail-section-label">// type</span>
+              <p style="margin:0;font-size:0.9rem;">Web Map · Change Detection · Public Tool</p>
+            </div>
+
+            <div class="sidebar-card">
+              <span class="detail-section-label">// tools & stack</span>
               <div class="identity-stack" style="margin-bottom:0;">
-                <span class="stack-tag" style="background:rgba(30,30,26,0.06);color:var(--text-muted);border-color:var(--border);">ArcGIS Pro</span>
-                <span class="stack-tag" style="background:rgba(30,30,26,0.06);color:var(--text-muted);border-color:var(--border);">Adobe Photoshop</span>
-                <span class="stack-tag" style="background:rgba(30,30,26,0.06);color:var(--text-muted);border-color:var(--border);">Adobe Illustrator</span>
+                <span class="stack-tag" style="background:rgba(30,30,26,0.06);color:var(--text-muted);border-color:var(--border);">ArcGIS API for JS</span>
+                <span class="stack-tag" style="background:rgba(30,30,26,0.06);color:var(--text-muted);border-color:var(--border);">JavaScript</span>
+                <span class="stack-tag" style="background:rgba(30,30,26,0.06);color:var(--text-muted);border-color:var(--border);">ArcGIS Enterprise</span>
               </div>
             </div>
 
             <div class="sidebar-card">
-              <span class="detail-section-label">// download</span>
-              <a href="../assets/tahoeShadedRelief.png" target="_blank" rel="noopener"
+              <span class="detail-section-label">// links</span>
+              <a href="https://masonbindl.com/TahoeSwipe/" target="_blank" rel="noopener"
                  style="font-size:0.875rem;display:inline-flex;align-items:center;gap:0.375rem;">
-                Full resolution PNG <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
+                Live application <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
               </a>
             </div>
 

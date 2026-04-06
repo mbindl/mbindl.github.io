@@ -6,32 +6,25 @@ if (mainNav) {
   });
 }
 
-// Swiper carousel
-if (document.querySelector('.project-swiper')) {
-  new Swiper('.project-swiper', {
-    slidesPerView: 1,
-    spaceBetween: 24,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: true,
-      pauseOnMouseEnter: true,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-      640:  { slidesPerView: 2 },
-      1024: { slidesPerView: 3 },
-    },
-    a11y: {
-      prevSlideMessage: 'Previous project',
-      nextSlideMessage: 'Next project',
-    },
+// Project grid filter (work.html)
+const filterBtns = document.querySelectorAll('.filter-btn');
+if (filterBtns.length) {
+  const cards = document.querySelectorAll('.projects-grid .project-card');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.dataset.filter;
+      cards.forEach(card => {
+        const cats = card.dataset.categories || '';
+        if (filter === 'all' || cats.includes(filter)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
   });
 }

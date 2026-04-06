@@ -24,9 +24,6 @@
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Swiper -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
   <!-- Font Awesome 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -44,7 +41,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto">
-          <li class="nav-item"><a class="nav-link" href="#portfolio">Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="work.html">Work</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
           <li class="nav-item">
@@ -86,7 +83,7 @@
         </div>
         <p class="hero-desc">Building web mapping applications, geospatial data pipelines, and custom cartographic products for the Lake Tahoe region and beyond.</p>
         <div class="hero-cta">
-          <a href="#portfolio" class="btn-primary-custom">View Work</a>
+          <a href="work.html" class="btn-primary-custom">View Work</a>
           <a href="https://bluebasincartography.com" class="btn-outline-custom" target="_blank" rel="noopener">
             Blue Basin Cartography <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
           </a>
@@ -103,124 +100,77 @@
     </div>
   </section>
 
-  <!-- Portfolio -->
-  <section id="portfolio" class="section-portfolio">
+  <!-- Featured Work -->
+  <section id="portfolio" class="section-featured">
     <div class="container">
       <div class="section-header">
-        <span class="section-label">// work</span>
+        <span class="section-label">// featured work</span>
         <h2 class="section-title">Selected Projects</h2>
-        <p class="section-desc">Web maps, dashboards, and cartographic products — from enterprise GIS at TRPA to custom map design at Blue Basin.</p>
+        <p class="section-desc">A few recent highlights — web maps, dashboards, and cartographic products from TRPA and Blue Basin Cartography.</p>
       </div>
 
-      <div class="swiper project-swiper">
-        <div class="swiper-wrapper">
+      <div class="featured-grid">
 
-          <!-- Tahoe Planning Tools -->
-          <div class="swiper-slide">
-            <div class="project-card">
-              <a href="https://masonbindl.com/TahoePlannerMaps/" target="_blank" rel="noopener" class="project-img-link">
-                <div class="project-img-wrap">
-                  <img src="assets/TahoePlannerScreenCapture.png" alt="Tahoe Planning Tools" class="project-img">
-                  <div class="project-img-overlay"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-                </div>
-              </a>
-              <div class="project-body">
-                <div class="project-tags">
-                  <span class="tag tag-webmap">Web Map</span>
-                  <span class="tag tag-trpa">TRPA</span>
-                </div>
-                <h3 class="project-title">Tahoe Planning Tools</h3>
-                <p class="project-desc">A suite of web maps, dashboards, and infographics supporting environmental planning in the Tahoe basin.</p>
-              </div>
+        <!-- Tahoe Planning Tools -->
+        <div class="project-card">
+          <a href="portfolio/tahoe-planning-tools.html" class="project-img-link">
+            <div class="project-img-wrap">
+              <img src="assets/TahoePlannerScreenCapture.png" alt="Tahoe Planning Tools" class="project-img">
+              <div class="project-img-overlay"><i class="fa-solid fa-arrow-right"></i></div>
             </div>
-          </div>
-
-          <!-- Historic Swipe -->
-          <div class="swiper-slide">
-            <div class="project-card">
-              <a href="https://masonbindl.com/TahoeSwipe/" target="_blank" rel="noopener" class="project-img-link">
-                <div class="project-img-wrap">
-                  <img src="assets/HistoricSwipe_thumbnail.png" alt="Historic Imagery Swipe" class="project-img">
-                  <div class="project-img-overlay"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-                </div>
-              </a>
-              <div class="project-body">
-                <div class="project-tags">
-                  <span class="tag tag-webmap">Web Map</span>
-                  <span class="tag tag-trpa">TRPA</span>
-                </div>
-                <h3 class="project-title">Historic Imagery Swipe</h3>
-                <p class="project-desc">Interactive web map with a swipe interface comparing current and historic aerial imagery of Lake Tahoe.</p>
-              </div>
+          </a>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-webmap">Web Map</span>
+              <span class="tag tag-trpa">TRPA</span>
             </div>
+            <h3 class="project-title">Tahoe Planning Tools</h3>
+            <p class="project-desc">A suite of web maps and dashboards supporting environmental planning in the Tahoe basin.</p>
           </div>
-
-          <!-- Shaded Relief -->
-          <div class="swiper-slide">
-            <div class="project-card">
-              <a href="portfolio/tahoerelief.html" class="project-img-link">
-                <div class="project-img-wrap">
-                  <img src="assets/tahoeShadedRelief_thumbnail.png" alt="Shaded Relief of Tahoe" class="project-img">
-                  <div class="project-img-overlay"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-                </div>
-              </a>
-              <div class="project-body">
-                <div class="project-tags">
-                  <span class="tag tag-carto">Cartography</span>
-                  <span class="tag tag-print">Print</span>
-                </div>
-                <h3 class="project-title">Shaded Relief of Tahoe</h3>
-                <p class="project-desc">Terrain relief map of the Lake Tahoe basin designed as a race course reference map concept.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- LTW Infographic -->
-          <div class="swiper-slide">
-            <div class="project-card">
-              <a href="portfolio/infographic.html" class="project-img-link">
-                <div class="project-img-wrap">
-                  <img src="assets/infographic_thumbnail.png" alt="Lake Tahoe West Infographic" class="project-img">
-                  <div class="project-img-overlay"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-                </div>
-              </a>
-              <div class="project-body">
-                <div class="project-tags">
-                  <span class="tag tag-dataviz">Data Viz</span>
-                  <span class="tag tag-carto">Cartography</span>
-                  <span class="tag tag-trpa">TRPA</span>
-                </div>
-                <h3 class="project-title">Lake Tahoe West Infographic</h3>
-                <p class="project-desc">Narrative infographic documenting forest conditions and ecological story of Tahoe's west shore.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Traffic Count -->
-          <div class="swiper-slide">
-            <div class="project-card">
-              <a href="https://masonbindl.com/TahoeTraffic" target="_blank" rel="noopener" class="project-img-link">
-                <div class="project-img-wrap">
-                  <img src="assets/traffic_thumbnail.png" alt="Tahoe Traffic Count Interactive" class="project-img">
-                  <div class="project-img-overlay"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-                </div>
-              </a>
-              <div class="project-body">
-                <div class="project-tags">
-                  <span class="tag tag-webmap">Web Map</span>
-                  <span class="tag tag-dataviz">Data Viz</span>
-                  <span class="tag tag-trpa">TRPA</span>
-                </div>
-                <h3 class="project-title">Tahoe Traffic Count Interactive</h3>
-                <p class="project-desc">Web mapping application visualizing historical traffic count data at stations around Lake Tahoe.</p>
-              </div>
-            </div>
-          </div>
-
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+
+        <!-- Historic Swipe -->
+        <div class="project-card">
+          <a href="portfolio/historic-swipe.html" class="project-img-link">
+            <div class="project-img-wrap">
+              <img src="assets/HistoricSwipe_thumbnail.png" alt="Historic Imagery Swipe" class="project-img">
+              <div class="project-img-overlay"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+          </a>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-webmap">Web Map</span>
+              <span class="tag tag-trpa">TRPA</span>
+            </div>
+            <h3 class="project-title">Historic Imagery Swipe</h3>
+            <p class="project-desc">Interactive swipe map comparing current and historic aerial imagery of Lake Tahoe.</p>
+          </div>
+        </div>
+
+        <!-- Shaded Relief -->
+        <div class="project-card">
+          <a href="portfolio/tahoerelief.html" class="project-img-link">
+            <div class="project-img-wrap">
+              <img src="assets/tahoeShadedRelief_thumbnail.png" alt="Shaded Relief of Tahoe" class="project-img">
+              <div class="project-img-overlay"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+          </a>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-carto">Cartography</span>
+              <span class="tag tag-print">Print</span>
+            </div>
+            <h3 class="project-title">Shaded Relief of Tahoe</h3>
+            <p class="project-desc">Terrain relief map of the Lake Tahoe basin designed as a race course reference map concept.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="featured-cta">
+        <a href="work.html" class="btn-outline-custom">
+          View all projects <i class="fa-solid fa-arrow-right fa-sm"></i>
+        </a>
       </div>
     </div>
   </section>
@@ -270,6 +220,28 @@
     </div>
   </section>
 
+  <!-- Contact -->
+  <section class="section-contact">
+    <div class="container">
+      <div class="contact-inner">
+        <span class="section-label" style="display:block;margin-bottom:0.75rem;">// contact</span>
+        <h2>Get in Touch</h2>
+        <p>Interested in collaborating on a web map, GIS project, or custom cartographic work? I'd love to hear about it.</p>
+        <div class="contact-links">
+          <a href="mailto:masonbindl@gmail.com" class="contact-link contact-link-primary">
+            <i class="fa-solid fa-envelope fa-sm"></i> Email Me
+          </a>
+          <a href="https://www.linkedin.com/in/masonbindl" class="contact-link contact-link-outline" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin fa-sm"></i> LinkedIn
+          </a>
+          <a href="https://bluebasincartography.com" class="contact-link contact-link-outline" target="_blank" rel="noopener">
+            <i class="fa-solid fa-compass-drafting fa-sm"></i> Blue Basin
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
@@ -279,7 +251,7 @@
           <p class="footer-tagline">GIS · Cartography · Development</p>
         </div>
         <nav class="footer-nav">
-          <a href="#portfolio">Work</a>
+          <a href="work.html">Work</a>
           <a href="about.html">About</a>
           <a href="resume.html">Resume</a>
           <a href="https://bluebasincartography.com" target="_blank" rel="noopener">Blue Basin</a>
@@ -299,7 +271,6 @@
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
