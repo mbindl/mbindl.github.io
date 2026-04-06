@@ -1,536 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">	
-        <title>Mason Bindl's Resume</title>
-        <link href="/assets/mb_icon.ico" rel="icon" >
-        <script src="https://kit.fontawesome.com/00ad3ce01f.js"></script>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/bootstrap.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-	</head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume · Mason Bindl</title>
+  <meta name="description" content="Resume of Mason Bindl — GIS Analyst, Developer, and Cartographer.">
+  <link rel="icon" href="/assets/mb_icon.ico">
 
-	<body>
-        <nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="../">Mason Bindl</a>
-				</div>
-				<div id="navbar" class="collapse navbar-collapse">
-					<ul class="nav navbar-nav">
-						<li>
-							<a href="../#portfolio">Portfolio</a>
-						</li>
-						<li>
-							<a href="/about">About</a>
-						</li>
-					</ul
-                    </div>
-					<ul class="nav navbar-nav navbar-right">
-						<li>
-							<a href="https://www.linkedin.com/in/masonbindl">
-								<i class="fab fa-linkedin"></i>
-							</a>
-						</li>
-						<li>
-							<a href="https://github.com/mbindl">
-								<i class="fab fa-github-square"></i>
-							</a>
-						</li>
-						<li>
-							<a href="https://twitter.com/masonbindl">
-								<i class="fab fa-twitter-square"></i>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-            
-<div class="jumbotron resume-page">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
-        <h1>Resume<h1>
+      <a class="navbar-brand" href="/">MTB</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="/#portfolio">Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-bbc" href="https://bluebasincartography.com" target="_blank" rel="noopener">
+              Blue Basin <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link nav-icon" href="https://www.linkedin.com/in/masonbindl" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-icon" href="https://github.com/mbindl" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-</div>
-        <div class="container resume-page">
-			<div class="row">
-				<div class="col-lg-2">
-					<p>
-						<i class="far fa-address-card"></i>
-						<b>SUMMARY</b>
-					</p>
-				</div>
-				<div class="col-lg-8">
-					<p>
-						GIS Analyst and Developer. Creative and detail-oriented self-starter with over a decade of professional experience in GIS/Cartography roles at various urban planning and natural resource management agencies. 
-				</div>
-			</div>
-			<hr>
-			<div class="row">
-				<div class="col-lg-2">
-					<p>
-						<i class="fas fa-tools"></i>
-						<b>TOOLS</b>
-					</p>
-				</div>
-				<div class="col-lg-8">
-					<p>
-				
-							<p>
-								<i class="fas fa-database"> </i>
-                                <b> Data Management &amp; Visualization:</b> 
-                                <p>
-                                 Portal for ArcGIS, ArcGIS Server, ArcPro, ERDPlus, SQL Server,  PostgreSQL/PostGIS, Python packages include: <a href= "https://gdal.org/"target="_blank">GDAL/OGR</a>, <a href= "https://pro.arcgis.com/en/pro-app/arcpy/get-started/what-is-arcpy-.htm"target="_blank">ArcPy</a>, <a href = "https://pypi.org/project/pandas/"target="_blank">Pandas</a>, <a href = "https://matplotlib.org/"target="_blank">Matplotlib</a>, <a href = "https://pypi.org/project/seaborn/"target="_blank">Seaborn</a>, <a href = "https://plot.ly/python/"target="_blank">Plotly</a>, <a href = "https://dash-gallery.plotly.host/Portal/"target="_blank">Dash</a>, <a href = "https://bokeh.pydata.org/en/latest/"target="_blank">Bokeh</a> 
-					           </p>		
-                            </p>
-							<p>
-                                <i class="fas fa-map-marked-alt"></i>
-                                <b> Desktop Analysis &amp; Cartography</b> 
-                                <p>
-                                ArcPro, QGIS, ArcPy, Numpy, Pandas, scikit-learn, SQL, Excel, 
-                                Adobe Illustrator, Adobe Photoshop
-                                </p>
-							</p>
-							<p>
-								<i class="fas fa-laptop"></i>
-                                <b> Web Development:</b> 
-                                <p>
-                                    <a href="https://developers.arcgis.com/javascript/"target="_blank">ArcGIS API for JavaScript</a>, HTML/CSS, Bootstrap, Markdown, Arcade, WebApp Builder, Portal for ArcGIS, ArcGIS Online, <a href= "https://developers.arcgis.com/python/"target="_blank">ArcGIS API for Python</a>, JavaScript libraries include: Leaflet, jQuery, D3  
-                                </p>
-							</p>
-							<p>
-                                <i class="fas fa-mobile-alt"></i> </i>
-                                <b> Mobile Development:</b> 
-                                <p>
-                                ESRI's Survery123, Survey123 Connect, Collector, Explorer, arcgis.apps Python module
-                                </p> 
-							 </p>
-							<p>
-								<i class="fas fa-file-code"> </i>
-                                <b> Code &amp; Project Management:</b> 
-                                <p>
-                                Git, GitHub, Jupyter Notebooks, PyCharm, ArcPro, Slack, OneNote
-                                </p>
-							</p>
-					</p>
-				</div>
-			</div>
-			<hr>
-            <div class="row">
-				<div class="col-lg-2">
-					<p>
-						<i class="fas fa-graduation-cap"></i>
-						<b>EDUCATION</b>
-					</p>
-				</div>
-                				
-				<div class="col-lg-8">
-					<p>
-						<b>Bachelor of Science - <a href = "https://uwm.edu/geography/undergraduate/major/geographical-information-track/"target="_blank">Geography - Geographic Information Science</a></b>
-						<br>
-						University of Wisconsin - Milwaukee<small> | Milwaukee, WI</small>
-					</p>
-				</div>
-                <div class="col-lg-2">
-					<p><em>2010</em></p>
-				</div>
-                <div class="col-lg-8 col-lg-offset-2">
-                <p>
-                    <b>Master of Science - <a href = "https://geography.wisc.edu/gis/onlinemasters/"target="_blank">Cartography, GIS, and Web Map Programming</a></b>
-                    <br>
-                    University of Wisconsin-Madison <small> | Online</small>
-                </p>
-                </div>
-				<div class="col-lg-2">
-					<p><em>2020</em></p>
-				</div>
-<!--
-				<div class="col-lg-8 col-lg-offset-2">
-					<ul>
-						<li>
-							<p>
-				            Course Work:
-							</p>
-						</li>
-						<ul>
-							<li>
-								<p>
-									<i>Interactive Cartography &amp; Geovisualization</i>: user experience/interface (UX/UI) design, interaction design, usability engineering, information visualization, and client-side development for web applications (D3, Leaflet, jQuery)
-								</p>
-							</li>
-							<li>
-								<p>
-									<i>Graphic Design in Cartography</i>: cartographic and design principles for web map and user interface design; responsive web development; custom terrain representation production
-								</p>
-							</li>
-							<li>
-								<p>
-									<i>GIS &amp; Spatial Analysis</i>: statistical methods for spatial data interpolation and analysis
-								</p>
-							</li>
-							<li>
-								<p>
-									<i>Geospatial Database Design &amp; Development</i>: data and process modeling; relational and document-oriented database design and implementation; SQL (PostgreSQL/PostGIS) and NoSQL (MongoDB)
-								</p>
-							</li>
-							<li>
-								<p>
-									<i>Geocomputing</i>: Python and command-line utilities (GDAL/OGR, ArcPy, CMD, Bash) for data processing and spatial analysis
-								</p>
-							</li>
-						</ul>
-					</ul>
-				</div>
--->
-			</div>
-           <hr>
-			<div class="row">
-				<div class="col-lg-2">
-					<p>
-						<i class="fas fa-laptop-code"></i>
-						<b>EXPERIENCE</b>
-					</p>
-				</div>
-				<div class="col-lg-8">
-					<p>
-						<b>GIS Analyst </b><small> | Research &amp; Analysis Division</small>
-						<br>
-						Tahoe Regional Planning Agency <small> | Stateline, NV</small>
-					</p>
-				</div>
-				<div class="col-lg-2">
-					<p><em>2016 &ndash; Present</em></p>
-				</div>
-				<div class="col-lg-8 col-lg-offset-2">
-                    <p>
-                       Manage all aspects of the ArcGIS Enterprise deployment using a federated Server, Portal, and Data Store powered by ArcSDE with SQL Server. Leverage ESRI technology to build digital mapping applications and data services leading the agency into modern and efficient data management practices and web mapping technologies.
-                    </p>
-                    <ul>
-						<li>
-							<p>
-				            <em>Accomplishments include:</em>
-							</p>
-						</li>
-						<ul>
-                            <li>
-								<p>
-								Coordinated the first annual Tahoe GIS User Group meeting, bringing together GIS professionals from across the region to share ideas and foster collaboration.
-								</p>
-							</li>
-                            <li>
-								<p>
-								Scripted the <a href = "https://github.com/trpa-agency/ParcelUpdate/blob/master/Parcel%20Update%20-%20Spring%202019.ipynb"target="_blank">parcel update process</a> using Python, resulting in a reliable and repeatable way to quickly update a universal parcel dataset for Tahoe
-								</p>
-							</li>
-							<li>
-								<p>
-                                    Created a <a href="https://gis.trpa.org/PermitReview"target="_blank">web application</a> for planners to review permit constraints. The app utilizes custom geoprocessing tools to intersect project boundaries with nearby features of interest.
-								</p>
-							</li>
-							<li>
-								<p>
-								Developed a <a href="https://gis.trpa.org/LakeTahoeWest"target="_blank">web application</a> used by the Lake Tahoe West Forest Health Restoration partnership to explore project data.
-								</p>
-							</li>
-							<li>
-								<p>
-								Created a <a href="https://gis.trpa.org/LCV"target="_blank">web application</a> that allows planners to record verified land capability and automatically calculates impervious coverage allowed using a custom geoprocessing service.
-								</p>
-							</li>
-                            <li>
-								<p>
-								Recently drafted a request for funding proposal to solicit a contractors services in processing raw LiDAR data into vegetation units, impervious surface features, and  to hydro-enforce the digital-elevation model.
-								</p>
-							</li>
-                            <li>
-								<p>
-								Evaluated mobile hardware and external GPS receivers used with data collection apps, purchased android based tablets, developed data collection workflows with ESRI’s Survey 123 and Collector apps; increasing the efficiency of field data collection for multiple departments.
-								</p>
-							</li>
-						</ul>
-						<li>
-							<p>
-				            <em>Responsibilities include:</em>
-							</p>
-						</li>
-						<ul>
-							<li>
-								<p>
-									Data (strategy, collection, QA/QC, analysis, processing, management, standardization)
-								</p>
-							</li>
-							<li>
-								<p>
-									Database (architecture, design, modeling)
-								</p>
-							</li>
-							<li>
-								<p>
-									User experience/interface (UX/UI) design
-								</p>
-							</li>
-							<li>
-								<p>
-									Web and mobile mapping application development
-								</p>
-							</li>
-							<li>
-								<p>
-									Project management
-								</p>
-							</li>
-							<li>
-								<p>
-									Technical documentation and support
-								</p>
-							</li>
-						</ul>
-					</ul>
-				</div>
-				<div class="col-lg-8 col-lg-offset-2">
-					<p>
-				    <b>GIS Specialist </b><small> | El Dorado National Forest</small>
-						<br>
-						United States Forest Service <small> | Placerville, CA</small>
-					</p>
-				</div>
-				<div class="col-lg-2">
-					<p><em>2014 &ndash; 2016</em></p>
-				</div>
-                <div class="col-lg-8 col-lg-offset-2">
-					
-                    <p>
-                    Maintained and updated the Forest’s enterprise geodatabase. Utilized ESRI technology to map and analyze resource conditions in support of environmental review process. Provided data management and analysis support to the engineering, timber management, fire, and ecology departments.
-                    Deployed on field assignments to provide GIS support to active wildland fire incidents and burned area emergency rehabilitation projects.
-                    </p>
-                    <ul>
-						<li>
-							<p>
-				            <em>Accomplishments include:</em>
-							</p>
-						</li>
-						<ul>
-                            <li>
-								<p>
-								Managed the GIS for the King Fire Burned Area Emergency Rehabilitation team; rapidly deploying mobile data collection applications, mapping critical infrastructure (storm sewer and forest roads) with the highest risk of landslide potential based on soil burn condition within the up-slope contributing area.
-								</p>
-							</li>
-							<li>
-								<p>
-								Provided GIS support to multiple large landscape collaborative forest health restoration partnerships.
-								</p>
-							</li>
-						</ul>
-					</ul>
-				</div>
+  </nav>
 
-                <div class="col-lg-8 col-lg-offset-2">
-					<p>
-						<b>IT Technician </b><small> | Sierra at Tahoe</small>
-						<br>
-						 Ski Resort <small> | Twin Bridges, CA</small>
-					</p>
-				</div>
-				<div class="col-lg-2">
-					<p><em>Winter 2013</em></p>
-				</div>
-                <div class="col-lg-8 col-lg-offset-2">
-					
-                    <p>
-                        Acted as the jack-of-all-trades IT tech. Fixed desktop issues, managed user privileges with Windows active directory, mapped physical hardware, and re-wired multiple buildings.
-                    </p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2">
-					<p>
-						<b>Biological Science Technician - GIS Focus </b><small> | Lake Tahoe Basin Management Unit</small>
-						<br>
-						 United States Forest Service <small> | Meyers, CA</small>
-					</p>
-				</div>
-				<div class="col-lg-2">
-					<p><em>2011 &ndash; 2014</em></p>
-				</div>
-                <div class="col-lg-8 col-lg-offset-2">
-					
-                    <p>
-                        Provided GIS technical support to multiple forest projects, leading analysis and reporting efforts, establishing data collection protocols, and training all staff levels on GIS best practices.
-                    </p>
-                    <ul>
-						<li>
-				        <p>
-				        <em>Accomplishments include:</em>
-				        </p>
-						</li>
-						<ul>
-							<li>
-								<p>
-								Conducted formal GIS training for Forest Service staff.
-								</p>
-							</li>
-                            <li>
-								<p>
-								Surveyed, mapped, and analyzed native Western-pearlshell mussel locations as part of the Upper Truckee River Restoration Project environmental review process.
-								</p>
-							</li>
-                            <li>
-								<p>
-								Generated LiDAR derivatives to create habitat suitability models.
-								</p>
-							</li>
-						</ul>
-					</ul>
-				</div>
-                <div class="col-lg-8 col-lg-offset-2">
-					<p>
-						<b>GIS / Black Bear / Biological Science Technician</b> <small> | Sequoia &amp; Kings Canyon </small>
-						<br>
-						National Park Service<small> | Three Rivers, CA</small>
-					</p>
-				</div>
-				<div class="col-lg-2">
-					<p><em>2008 &ndash; 2011</em></p>
-				</div>
-                <div class="col-lg-8 col-lg-offset-2">
-					
-                    <p>
-                        Updated the Park’s GIS data. Performed fieldwork tracking black bears wearing GPS enabled collars and then analyzed the location data. Performed backcountry fieldwork to support restoration efforts for the Sierra Nevada Yellow-legged frogs.
-                    </p>
-                    <ul>
-						<li>
-							<p>
-				            <em>Accomplishments include:</em>
-							</p>
-						</li>
-						<ul>
-                            <li>
-								<p>
-								Analyzed female black bear foraging habits using kernel density estimations to represent home ranges and core areas, correlating the data with vegetation.
-								</p>
-							</li>
-                            <li>
-								<p>
-								Updated the park’s wilderness boundary feature class and metadata using coordinate-geometry (COGO) tools, and applied topology rules to identify data inconsistencies. 
-								</p>
-							</li>
-							<li>
-								<p>
-								Coordinated backcountry project logistics while conducting remote field work.
-								</p>
-							</li>
-                            <li>
-								<p>
-								Created reference maps for crew navigation and setup GPS enabled field data capture.
-								</p>
-							</li>
-							<li>
-								<p>
-								Worked to reduce human-bear conflict in the park by educating park visitors and to restore habitat for the endangered Sierra Nevada Yellow-legged frogs.
-								</p>
-							</li>
-						</ul>
-					</ul>
-				</div>
-				
-				<div class="col-lg-8 col-lg-offset-2">
-					<p>
-                        <b>GIS Specialist </b><small> | Department of Community Development </small>
-                        <br>
-						City of New Berlin <small> | New Berlin, WI</small>
-					</p>
-				</div>
-				<div class="col-lg-2">
-					<p><em>2007 &ndash; 2010</em></p>
-				</div>
-                <div class="col-lg-8 col-lg-offset-2">
-					
-                    <p>
-                       Updated and maintained the City’s enterprise geodatabase, coordinated data collection efforts of multiple departments, mapped assets of the sanitary sewer and stormwater systems, digitized features off of as-built drawings, translated feature geometries from AutoCAD files to GIS
-                    </p>
-                    <ul>
-						<li>
-							<p>
-				            <em>Accomplishments include:</em>
-							</p>
-						</li>
-						<ul>
-                            <li>
-								<p>
-								Coordinated with the Public Works department to create the first ever stormwater and sanitary sewer GIS data; managed the collection of asset GPS locations, generated a map series used by field crews, and attributed the features.
-								</p>
-							</li>
-							<li>
-								<p>
-								Created reference, zoning, and thematic maps for city council meetings.
-								</p>
-							</li>
-							<li>
-								<p>
-                                Updated zoning, easement, and parcel features using coordinate-geometry tools. 
-								</p>
-							</li>
-						</ul>
-					</ul>
-				</div>
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="hex-bg" aria-hidden="true"></div>
+    <div class="container" style="position:relative;z-index:2;">
+      <span class="page-header-label">// resume</span>
+      <h1>Resume</h1>
+      <p>GIS Analyst &amp; Developer with 15+ years of experience across planning, natural resources, and cartography.</p>
+    </div>
+  </div>
 
-				<div class="col-lg-8 col-lg-offset-2">
-					<p>
-						<b>Geospatial Data Librarian </b><small> | American Geographical Society Library </small>
-						<br>
-						University of Wisconsin - Milwaukee <small> | Milwaukee, WI</small>
-					</p>
-				</div>
-				<div class="col-lg-2">
-					<p><em>2005 &ndash; 2007</em></p>
-				</div>
-                <div class="col-lg-8 col-lg-offset-2">
-					
-                    <p>
-                        Consulted with library patrons to identify and disseminate data from the library’s geospatial data collection. Cataloged new library holdings, georeferenced aerial photos, heads-up digitized features, and projected/transformed geospatial data like a boss.
-                    </p>
-                    <ul>
-						<li>
-							<p>
-				            <em>Accomplishments include:</em>
-							</p>
-						</li>
-						<ul>
-							<li>
-								<p>
-								Wore the white gloves to scan Charles Lindbergh's original <a href="https://collections.lib.uwm.edu/digital/collection/agdm/id/861/"> flight charts</a>.
-								</p>
-							</li>
-							<li>
-								<p>
-								Georeferenced a set of aerial images spanning the shoreline of Lake Michigan.
-								</p>
-							</li>
-							<li>
-								<p>
-								Created a feature class of historic parcels within Milwaukee using COGO tools to delineate from legal descriptions.
-								</p>
-							</li>
-						</ul>
-					</ul>
-				</div>
+  <!-- Content -->
+  <div class="page-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 col-xl-8">
+
+          <!-- Summary -->
+          <div class="resume-section">
+            <div class="resume-section-title"><i class="fa-solid fa-id-card"></i> Summary</div>
+            <p style="font-size:1rem;line-height:1.7;">
+              GIS Analyst, Developer, and Cartographer. Creative and detail-oriented self-starter with over 15 years of professional experience in GIS and cartography roles at urban planning and natural resource management agencies. Specializes in enterprise GIS management, web mapping application development, geospatial data pipelines, and custom cartographic design.
+            </p>
+          </div>
+
+          <!-- Tools & Skills -->
+          <div class="resume-section">
+            <div class="resume-section-title"><i class="fa-solid fa-screwdriver-wrench"></i> Tools &amp; Skills</div>
+            <div class="tools-grid">
+              <div class="tool-group">
+                <div class="tool-group-title"><i class="fa-solid fa-database"></i> Data &amp; Databases</div>
+                <ul>
+                  <li>ArcGIS Enterprise / Server</li>
+                  <li>SQL Server / PostgreSQL</li>
+                  <li>PostGIS</li>
+                  <li>ArcSDE</li>
+                  <li>GDAL / OGR</li>
+                </ul>
+              </div>
+              <div class="tool-group">
+                <div class="tool-group-title"><i class="fa-solid fa-laptop-code"></i> Web Development</div>
+                <ul>
+                  <li>JavaScript / HTML / CSS</li>
+                  <li>Leaflet.js</li>
+                  <li>MapLibre GL JS</li>
+                  <li>ArcGIS JS API</li>
+                  <li>Bootstrap</li>
+                </ul>
+              </div>
+              <div class="tool-group">
+                <div class="tool-group-title"><i class="fa-solid fa-code"></i> Python</div>
+                <ul>
+                  <li>ArcPy</li>
+                  <li>ArcGIS API for Python</li>
+                  <li>Pandas / GeoPandas</li>
+                  <li>Plotly / Dash</li>
+                  <li>GDAL / Shapely</li>
+                </ul>
+              </div>
+              <div class="tool-group">
+                <div class="tool-group-title"><i class="fa-solid fa-map"></i> Desktop GIS &amp; Design</div>
+                <ul>
+                  <li>ArcGIS Pro</li>
+                  <li>QGIS</li>
+                  <li>Mapbox Studio</li>
+                  <li>Adobe Illustrator</li>
+                  <li>Adobe Photoshop</li>
+                </ul>
+              </div>
+              <div class="tool-group">
+                <div class="tool-group-title"><i class="fa-solid fa-mobile-screen"></i> Mobile &amp; Field</div>
+                <ul>
+                  <li>ArcGIS Survey123</li>
+                  <li>ArcGIS Collector</li>
+                  <li>Field Maps</li>
+                  <li>GPS data collection</li>
+                </ul>
+              </div>
+              <div class="tool-group">
+                <div class="tool-group-title"><i class="fa-brands fa-git-alt"></i> Dev &amp; PM</div>
+                <ul>
+                  <li>Git / GitHub</li>
+                  <li>Jupyter Notebooks</li>
+                  <li>VS Code / PyCharm</li>
+                  <li>Agile / project mgmt</li>
+                </ul>
+              </div>
             </div>
-        </div>
-    </div>
-<footer class="footer">
-    <div class="container">
-        <div class="text-muted right-align">
-            <p class = "foottext"><small>© 2020 Mason Bindl</small></p>
-        </div>
-    </div>
-</footer>
+          </div>
 
-		<script type="text/javascript" src="lib/jquery-3.3.1.js"></script>
-		<script type="text/javascript" src="lib/bootstrap.min.js"></script>
-	</body>
+          <!-- Education -->
+          <div class="resume-section">
+            <div class="resume-section-title"><i class="fa-solid fa-graduation-cap"></i> Education</div>
+
+            <div class="resume-entry">
+              <div class="resume-entry-main">
+                <h4><a href="https://geography.wisc.edu/gis/onlinemasters/" target="_blank" rel="noopener">M.S. Cartography, GIS &amp; Web Map Programming</a></h4>
+                <p class="resume-entry-org">University of Wisconsin–Madison &nbsp;·&nbsp; Online</p>
+              </div>
+              <div class="resume-entry-date">2020</div>
+            </div>
+
+            <div class="resume-entry">
+              <div class="resume-entry-main">
+                <h4><a href="https://uwm.edu/geography/undergraduate/major/geographical-information-track/" target="_blank" rel="noopener">B.S. Geography – Geographic Information Science</a></h4>
+                <p class="resume-entry-org">University of Wisconsin–Milwaukee &nbsp;·&nbsp; Milwaukee, WI</p>
+              </div>
+              <div class="resume-entry-date">2010</div>
+            </div>
+          </div>
+
+          <!-- Experience -->
+          <div class="resume-section">
+            <div class="resume-section-title"><i class="fa-solid fa-briefcase"></i> Experience</div>
+
+            <!-- Blue Basin Cartography -->
+            <div class="resume-entry">
+              <div class="resume-entry-main">
+                <h4>Founder &amp; Cartographer</h4>
+                <p class="resume-entry-org">Blue Basin Cartography &nbsp;·&nbsp; South Lake Tahoe, CA</p>
+                <p>Custom cartographic design and map production studio. Creating print maps, web basemaps, and data visualizations for clients who need to communicate place and geography effectively.</p>
+                <ul>
+                  <li>Custom print and digital map design using Adobe Illustrator, QGIS, and Mapbox Studio</li>
+                  <li>Interactive web cartography with MapLibre GL JS and Leaflet</li>
+                  <li>Client work spanning land management, recreation, and environmental storytelling</li>
+                </ul>
+              </div>
+              <div class="resume-entry-date">2022 – Present</div>
+            </div>
+
+            <!-- TRPA -->
+            <div class="resume-entry">
+              <div class="resume-entry-main">
+                <h4>GIS Analyst &amp; Developer</h4>
+                <p class="resume-entry-org">Tahoe Regional Planning Agency &nbsp;·&nbsp; Stateline, NV</p>
+                <p>
+                  Manage all aspects of the ArcGIS Enterprise deployment — federated Server, Portal, and Data Store on ArcSDE with SQL Server. Lead the agency's modern data management practices and web mapping development, building tools that support environmental review, forest health restoration, and permit planning.
+                </p>
+                <ul>
+                  <li>Coordinated the first annual Tahoe GIS User Group meeting, connecting GIS professionals across the region</li>
+                  <li>Scripted the <a href="https://github.com/trpa-agency/ParcelUpdate/blob/master/Parcel%20Update%20-%20Spring%202019.ipynb" target="_blank" rel="noopener">parcel update process</a> in Python — reliable, repeatable, and now a core agency workflow</li>
+                  <li>Built a <a href="https://gis.trpa.org/PermitReview" target="_blank" rel="noopener">permit review web application</a> using custom geoprocessing tools to intersect project boundaries with constraint layers</li>
+                  <li>Developed the <a href="https://gis.trpa.org/LakeTahoeWest" target="_blank" rel="noopener">Lake Tahoe West web application</a> for the forest health restoration partnership</li>
+                  <li>Built a <a href="https://gis.trpa.org/LCV" target="_blank" rel="noopener">land capability verification tool</a> that auto-calculates impervious coverage allowances via a custom geoprocessing service</li>
+                  <li>Evaluated and deployed mobile field data collection workflows using Survey123 and Collector across multiple departments</li>
+                  <li>Responsibilities: data management &amp; QA/QC, database design, UX/UI, web &amp; mobile app development, project management, technical documentation</li>
+                </ul>
+              </div>
+              <div class="resume-entry-date">2016 – Present</div>
+            </div>
+
+            <!-- USFS El Dorado -->
+            <div class="resume-entry">
+              <div class="resume-entry-main">
+                <h4>GIS Specialist</h4>
+                <p class="resume-entry-org">El Dorado National Forest, United States Forest Service &nbsp;·&nbsp; Placerville, CA</p>
+                <p>Maintained the Forest's enterprise geodatabase. Supported environmental review, timber, fire, and ecology teams with GIS analysis and mapping. Deployed on active wildland fire and burned area emergency rehabilitation teams.</p>
+                <ul>
+                  <li>Managed GIS for the King Fire Burned Area Emergency Rehabilitation team — deployed mobile data collection, mapped critical infrastructure, and assessed landslide risk from burn severity data</li>
+                  <li>Provided GIS support to multiple landscape-scale collaborative forest health restoration partnerships</li>
+                </ul>
+              </div>
+              <div class="resume-entry-date">2014 – 2016</div>
+            </div>
+
+            <!-- USFS Lake Tahoe Basin -->
+            <div class="resume-entry">
+              <div class="resume-entry-main">
+                <h4>Biological Science Technician – GIS Focus</h4>
+                <p class="resume-entry-org">Lake Tahoe Basin Management Unit, United States Forest Service &nbsp;·&nbsp; Meyers, CA</p>
+                <p>Provided GIS technical support to multiple forest projects, leading analysis and reporting, establishing data collection protocols, and training staff on GIS best practices.</p>
+                <ul>
+                  <li>Conducted formal GIS training for Forest Service staff</li>
+                  <li>Surveyed, mapped, and analyzed Western pearlshell mussel locations for the Upper Truckee River Restoration environmental review</li>
+                  <li>Generated LiDAR derivatives to support habitat suitability modeling</li>
+                </ul>
+              </div>
+              <div class="resume-entry-date">2011 – 2014</div>
+            </div>
+
+            <!-- NPS Sequoia -->
+            <div class="resume-entry">
+              <div class="resume-entry-main">
+                <h4>GIS / Black Bear / Biological Science Technician</h4>
+                <p class="resume-entry-org">Sequoia &amp; Kings Canyon National Parks, National Park Service &nbsp;·&nbsp; Three Rivers, CA</p>
+                <p>Updated the Park's GIS data, tracked black bears with GPS collars, and conducted backcountry fieldwork for Sierra Nevada Yellow-legged frog restoration.</p>
+                <ul>
+                  <li>Analyzed female black bear foraging habits using kernel density estimation, correlating home ranges with vegetation data</li>
+                  <li>Updated wilderness boundary feature class with COGO tools and applied topology rules to identify data inconsistencies</li>
+                  <li>Created reference maps and GPS data capture setups for field crews</li>
+                </ul>
+              </div>
+              <div class="resume-entry-date">2008 – 2011</div>
+            </div>
+
+            <!-- City of New Berlin -->
+            <div class="resume-entry">
+              <div class="resume-entry-main">
+                <h4>GIS Specialist</h4>
+                <p class="resume-entry-org">City of New Berlin, Department of Community Development &nbsp;·&nbsp; New Berlin, WI</p>
+                <p>Updated and maintained the City's enterprise geodatabase, coordinated data collection across departments, and mapped sanitary sewer and stormwater assets.</p>
+                <ul>
+                  <li>Created the city's first stormwater and sanitary sewer GIS dataset; coordinated field GPS collection and produced a map series for crews</li>
+                  <li>Updated zoning, easement, and parcel features using COGO tools; created reference and thematic maps for city council meetings</li>
+                </ul>
+              </div>
+              <div class="resume-entry-date">2007 – 2010</div>
+            </div>
+
+            <!-- AGSL -->
+            <div class="resume-entry">
+              <div class="resume-entry-main">
+                <h4>Geospatial Data Librarian</h4>
+                <p class="resume-entry-org">American Geographical Society Library, UW–Milwaukee &nbsp;·&nbsp; Milwaukee, WI</p>
+                <p>Consulted with patrons to identify geospatial data, cataloged holdings, georeferenced aerial photos, and digitized features.</p>
+                <ul>
+                  <li>Wore the white gloves to scan Charles Lindbergh's original <a href="https://collections.lib.uwm.edu/digital/collection/agdm/id/861/" target="_blank" rel="noopener">flight charts</a></li>
+                  <li>Georeferenced aerial images spanning the Lake Michigan shoreline</li>
+                  <li>Created a historic parcel feature class for Milwaukee using COGO tools from legal descriptions</li>
+                </ul>
+              </div>
+              <div class="resume-entry-date">2005 – 2007</div>
+            </div>
+
+          </div>
+          <!-- end experience -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <span class="footer-logo">MTB</span>
+          <p class="footer-tagline">GIS · Cartography · Development</p>
+        </div>
+        <nav class="footer-nav">
+          <a href="/#portfolio">Work</a>
+          <a href="about.html">About</a>
+          <a href="https://bluebasincartography.com" target="_blank" rel="noopener">Blue Basin</a>
+        </nav>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/masonbindl" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/mbindl" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com/masonbindl" aria-label="Twitter" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+          <a href="mailto:masonbindl@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <small>© 2026 Mason Bindl</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
 </html>

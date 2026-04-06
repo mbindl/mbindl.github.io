@@ -1,146 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118279866-2"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mason Bindl · GIS & Cartography</title>
+  <meta name="description" content="Mason Bindl — GIS Analyst & Developer at TRPA and Founder of Blue Basin Cartography. Web maps, geospatial data, and custom cartography in Lake Tahoe.">
+  <link rel="icon" href="/assets/mb_icon.ico">
 
-          gtag('config', 'UA-118279866-2');
-        </script>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">	
-        <title>Mason Bindl's Portfolio</title>
-        <link href="/assets/mb_icon.ico" rel="icon" >
-        <script src="https://kit.fontawesome.com/00ad3ce01f.js"></script>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/bootstrap.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-	</head>
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118279866-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-118279866-2');
+  </script>
 
-	<body>
-        <nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#portfolio">MTB</a>
-				</div>
-				<div id="navbar" class="collapse navbar-collapse">
-					<ul class="nav navbar-nav">
-						<li>
-							<a href="#portfolio">Portfolio</a>
-						</li>
-						<li>
-							<a href="/about">About</a>
-						</li>
-						<li>
-							<a href="/resume">Resume</a>
-						</li>
-					</ul
-                    </div>
-					<ul class="nav navbar-nav navbar-right">
-						<li>
-							<a href="https://www.linkedin.com/in/masonbindl">
-								<i class="fab fa-linkedin"></i>
-							</a>
-						</li>
-						<li>
-							<a href="https://github.com/mbindl">
-								<i class="fab fa-github-square"></i>
-							</a>
-						</li>
-						<li>
-							<a href="https://twitter.com/masonbindl">
-								<i class="fab fa-twitter-square"></i>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-<!--Banner-->
-<div class="jumbotron">
-    <div class="container banner">
-        <h2>Mason Bindl</h2>
-        <p><small>Analyst | Cartographer | Developer</small></p>
-    </div>
-</div>       
-<!--Portfolio-->
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-		<section id="portfolio">
-			<div class="container">
-                    <div class="col-sm-6 col-md-4">
-						<a href="https://masonbindl.com/TahoePlannerMaps/" class="thumbnail">
-							<img src="assets/TahoePlannerScreenCapture.png" class="img-responsive" alt=".. thumbnail">
-						</a>
-						<div class="caption">
-							<h3>Tahoe Planning Tools</h3>
-							<p>A series of web maps, dashboards, and infographics to assisst planning efforts in Tahoe.</p>
-						</div>
-					</div>
-                    <div class="col-sm-6 col-md-4">
-						<a href="https://masonbindl.com/TahoeSwipe/" class="thumbnail">
-							<img src="assets/HistoricSwipe_thumbnail.png" class="img-responsive" alt=".. thumbnail">
-						</a>
-						<div class="caption">
-							<h3>Historic Swipe</h3>
-							<p>A web map with a swipe to compare historic imagery in Tahoe.</p>
-						</div>
-					</div>
-                    <div class="col-sm-6 col-md-4">
-						<a href="https://api.mapbox.com/styles/v1/mtbindl/cjpm66f7x1kf32spdpfdyyxs3.html?fresh=true&title=true&access_token=pk.eyJ1IjoibXRiaW5kbCIsImEiOiJjanMzcXljcXEwNHJkNDlwZno3dWo5a2UxIn0.qynnCUslq3GOpWprfjfDrg#9.95/39.1103/-120.0345" class="thumbnail">
-							<img src="assets/mapbox_thumbnail.png" class="img-responsive" alt=".. thumbnail">
-						</a>
-						<div class="caption">
-							<h3>Nautical Base Map of Tahoe</h3>
-							<p>A vector tile base map used in the Tahoe Boating mobile app.</p>
-						</div>
-					</div>
-                    <div class="col-sm-6 col-md-4">
-                        <a href="portfolio/tahoerelief.html" class="thumbnail">
-                            <img src="assets/tahoeShadedRelief_thumbnail.png" class="img-responsive" alt="Tahoe Shaded Relief thumbnail">
-                        </a>
-                        <div class="caption">
-                            <h3>Shaded Relief of Tahoe</h3>
-                            <p>A relief map of Tahoe showing a made-up bike race.</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a href="portfolio/infographic.html" class="thumbnail">
-                            <img src="assets/infographic_thumbnail.png" class="img-responsive" alt="Tahoe Infographic thumbnail">
-                        </a>
-                        <div class="caption">
-                            <h3>Lake Tahoe West Infographic</h3>
-                            <p>An infographic telling the story of the forests of Tahoe's west shore.</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-						<a href="https://masonbindl.com/TahoeTraffic" class="thumbnail">
-							<img src="assets/traffic_thumbnail.png" class="img-responsive" alt=".. thumbnail">
-						</a>
-						<div class="caption">
-							<h3>Tahoe Traffic Count Interactive</h3>
-							<p>A web mapping application showing traffic counts around Lake Tahoe.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-<footer class="footer">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
-        <div class="text-muted right-align">
-            <p class = "foottext"><small>© 2020 Mason Bindl</small></p>
-        </div>
+      <a class="navbar-brand" href="/">MTB</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-bbc" href="https://bluebasincartography.com" target="_blank" rel="noopener">
+              Blue Basin <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link nav-icon" href="https://www.linkedin.com/in/masonbindl" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-icon" href="https://github.com/mbindl" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-</footer>
- 		<script type="text/javascript" src="lib/jquery-3.3.1.js"></script>
-		<script type="text/javascript" src="lib/bootstrap.min.js"></script>
-	</body>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hex-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero-inner">
+        <span class="hero-eyebrow">GIS &nbsp;·&nbsp; Cartography &nbsp;·&nbsp; Development</span>
+        <h1 class="hero-title">Mason<br>Bindl</h1>
+        <div class="hero-badges">
+          <span class="badge-role badge-trpa">
+            <i class="fa-solid fa-layer-group fa-xs"></i> GIS Analyst &amp; Developer, TRPA
+          </span>
+          <span class="badge-role badge-bbc">
+            <i class="fa-solid fa-compass-drafting fa-xs"></i> Founder, Blue Basin Cartography
+          </span>
+        </div>
+        <p class="hero-desc">Building web mapping applications, geospatial data pipelines, and custom cartographic products for the Lake Tahoe region and beyond.</p>
+        <div class="hero-cta">
+          <a href="#portfolio" class="btn-primary-custom">View Work</a>
+          <a href="https://bluebasincartography.com" class="btn-outline-custom" target="_blank" rel="noopener">
+            Blue Basin Cartography <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Decorative nested hexagons -->
+    <div class="hero-hex-cluster" aria-hidden="true">
+      <svg viewBox="0 0 300 340" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="150,18 272,88 272,228 150,298 28,228 28,88" class="hex-dec hex-outer"/>
+        <polygon points="150,55 243,108 243,213 150,266 57,213 57,108" class="hex-dec hex-mid"/>
+        <polygon points="150,92 216,130 216,205 150,243 84,205 84,130" class="hex-dec hex-inner"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="section-portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">// work</span>
+        <h2 class="section-title">Selected Projects</h2>
+        <p class="section-desc">Web maps, dashboards, and cartographic products — from enterprise GIS at TRPA to custom map design at Blue Basin.</p>
+      </div>
+
+      <div class="swiper project-swiper">
+        <div class="swiper-wrapper">
+
+          <!-- Tahoe Planning Tools -->
+          <div class="swiper-slide">
+            <div class="project-card">
+              <a href="https://masonbindl.com/TahoePlannerMaps/" target="_blank" rel="noopener" class="project-img-link">
+                <div class="project-img-wrap">
+                  <img src="assets/TahoePlannerScreenCapture.png" alt="Tahoe Planning Tools" class="project-img">
+                  <div class="project-img-overlay"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                </div>
+              </a>
+              <div class="project-body">
+                <div class="project-tags">
+                  <span class="tag tag-webmap">Web Map</span>
+                  <span class="tag tag-trpa">TRPA</span>
+                </div>
+                <h3 class="project-title">Tahoe Planning Tools</h3>
+                <p class="project-desc">A suite of web maps, dashboards, and infographics supporting environmental planning in the Tahoe basin.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Historic Swipe -->
+          <div class="swiper-slide">
+            <div class="project-card">
+              <a href="https://masonbindl.com/TahoeSwipe/" target="_blank" rel="noopener" class="project-img-link">
+                <div class="project-img-wrap">
+                  <img src="assets/HistoricSwipe_thumbnail.png" alt="Historic Imagery Swipe" class="project-img">
+                  <div class="project-img-overlay"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                </div>
+              </a>
+              <div class="project-body">
+                <div class="project-tags">
+                  <span class="tag tag-webmap">Web Map</span>
+                  <span class="tag tag-trpa">TRPA</span>
+                </div>
+                <h3 class="project-title">Historic Imagery Swipe</h3>
+                <p class="project-desc">Interactive web map with a swipe interface comparing current and historic aerial imagery of Lake Tahoe.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Shaded Relief -->
+          <div class="swiper-slide">
+            <div class="project-card">
+              <a href="portfolio/tahoerelief.html" class="project-img-link">
+                <div class="project-img-wrap">
+                  <img src="assets/tahoeShadedRelief_thumbnail.png" alt="Shaded Relief of Tahoe" class="project-img">
+                  <div class="project-img-overlay"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                </div>
+              </a>
+              <div class="project-body">
+                <div class="project-tags">
+                  <span class="tag tag-carto">Cartography</span>
+                  <span class="tag tag-print">Print</span>
+                </div>
+                <h3 class="project-title">Shaded Relief of Tahoe</h3>
+                <p class="project-desc">Terrain relief map of the Lake Tahoe basin designed as a race course reference map concept.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- LTW Infographic -->
+          <div class="swiper-slide">
+            <div class="project-card">
+              <a href="portfolio/infographic.html" class="project-img-link">
+                <div class="project-img-wrap">
+                  <img src="assets/infographic_thumbnail.png" alt="Lake Tahoe West Infographic" class="project-img">
+                  <div class="project-img-overlay"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                </div>
+              </a>
+              <div class="project-body">
+                <div class="project-tags">
+                  <span class="tag tag-dataviz">Data Viz</span>
+                  <span class="tag tag-carto">Cartography</span>
+                  <span class="tag tag-trpa">TRPA</span>
+                </div>
+                <h3 class="project-title">Lake Tahoe West Infographic</h3>
+                <p class="project-desc">Narrative infographic documenting forest conditions and ecological story of Tahoe's west shore.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Traffic Count -->
+          <div class="swiper-slide">
+            <div class="project-card">
+              <a href="https://masonbindl.com/TahoeTraffic" target="_blank" rel="noopener" class="project-img-link">
+                <div class="project-img-wrap">
+                  <img src="assets/traffic_thumbnail.png" alt="Tahoe Traffic Count Interactive" class="project-img">
+                  <div class="project-img-overlay"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                </div>
+              </a>
+              <div class="project-body">
+                <div class="project-tags">
+                  <span class="tag tag-webmap">Web Map</span>
+                  <span class="tag tag-dataviz">Data Viz</span>
+                  <span class="tag tag-trpa">TRPA</span>
+                </div>
+                <h3 class="project-title">Tahoe Traffic Count Interactive</h3>
+                <p class="project-desc">Web mapping application visualizing historical traffic count data at stations around Lake Tahoe.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Identity Section -->
+  <section class="section-identity">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="identity-card identity-trpa">
+            <div class="identity-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <span class="identity-label">Day job</span>
+            <h3>Tahoe Regional Planning Agency</h3>
+            <p class="identity-role">GIS Analyst &amp; Developer · Stateline, NV</p>
+            <p>Managing enterprise GIS infrastructure and building web mapping applications to support environmental planning and resource management in the Lake Tahoe basin. Leading the agency's modern data management and web mapping practices since 2016.</p>
+            <div class="identity-stack">
+              <span class="stack-tag">ArcGIS Enterprise</span>
+              <span class="stack-tag">Python</span>
+              <span class="stack-tag">Leaflet</span>
+              <span class="stack-tag">JavaScript</span>
+              <span class="stack-tag">PostGIS</span>
+              <span class="stack-tag">SQL Server</span>
+            </div>
+            <a href="resume.html" class="identity-link">Full experience <i class="fa-solid fa-arrow-right fa-sm"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="identity-card identity-bbc">
+            <div class="identity-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+            <span class="identity-label">Side project</span>
+            <h3>Blue Basin Cartography</h3>
+            <p class="identity-role">Founder &amp; Cartographer · South Lake Tahoe, CA</p>
+            <p>Custom cartographic design and map production studio. Creating beautiful, functional maps for clients who need to communicate place, data, and story — from print maps to interactive web cartography.</p>
+            <div class="identity-stack">
+              <span class="stack-tag">Adobe Illustrator</span>
+              <span class="stack-tag">QGIS</span>
+              <span class="stack-tag">Mapbox GL</span>
+              <span class="stack-tag">MapLibre</span>
+              <span class="stack-tag">GDAL</span>
+            </div>
+            <a href="https://bluebasincartography.com" class="identity-link" target="_blank" rel="noopener">
+              bluebasincartography.com <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <span class="footer-logo">MTB</span>
+          <p class="footer-tagline">GIS · Cartography · Development</p>
+        </div>
+        <nav class="footer-nav">
+          <a href="#portfolio">Work</a>
+          <a href="about.html">About</a>
+          <a href="resume.html">Resume</a>
+          <a href="https://bluebasincartography.com" target="_blank" rel="noopener">Blue Basin</a>
+        </nav>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/masonbindl" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/mbindl" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com/masonbindl" aria-label="Twitter" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+          <a href="mailto:masonbindl@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <small>© 2026 Mason Bindl</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
 </html>
