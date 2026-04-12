@@ -19,37 +19,25 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- Custom -->
-  <link href="css/style.css?v=2" rel="stylesheet">
+  <link href="css/style.css?v=3" rel="stylesheet">
 </head>
 <body>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="/">MTB</a>
+      <a class="navbar-brand" href="/">Mason Bindl</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link active" href="work.html">Work</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
           <li class="nav-item">
             <a class="nav-link nav-link-bbc" href="https://bluebasincartography.com" target="_blank" rel="noopener">
               Blue Basin <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
-            </a>
-          </li>
-        </ul>
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link nav-icon" href="https://www.linkedin.com/in/masonbindl" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-icon" href="https://github.com/mbindl" target="_blank" rel="noopener" aria-label="GitHub">
-              <i class="fab fa-github"></i>
             </a>
           </li>
         </ul>
@@ -61,7 +49,7 @@
   <div class="page-header">
     <div class="hex-bg" aria-hidden="true"></div>
     <div class="container" style="position:relative;z-index:2;">
-      <span class="page-header-label">// work</span>
+      <span class="page-header-label">Work</span>
       <h1>Projects</h1>
       <p>Web maps, dashboards, and cartographic products — from enterprise GIS at TRPA to custom map design at Blue Basin.</p>
     </div>
@@ -75,6 +63,7 @@
       <div class="project-filters">
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="webmap">Web Maps</button>
+        <button class="filter-btn" data-filter="dashboard">Dashboards</button>
         <button class="filter-btn" data-filter="carto">Cartography</button>
         <button class="filter-btn" data-filter="dataviz">Data Viz</button>
         <button class="filter-btn" data-filter="trpa">TRPA</button>
@@ -177,14 +166,38 @@
           </div>
         </div>
 
-        <!--
-          ADD NEW PROJECT CARDS HERE
-          Copy the block above and update:
-            - data-categories: space-separated list of webmap / carto / dataviz / trpa / bbc / print
-            - href: link to detail page or external project
-            - img src / alt
-            - tags, title, description
-        -->
+        <!-- Climate Resilience Dashboard -->
+        <div class="project-card" data-categories="dashboard dataviz trpa">
+          <a href="https://climate.laketahoeinfo.org" class="project-img-link" target="_blank" rel="noopener">
+            <div class="project-img-wrap project-thumb-climate">
+              <div class="project-img-overlay"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </div>
+          </a>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-dashboard">Dashboard</span>
+              <span class="tag tag-trpa">TRPA</span>
+              <span class="tag tag-year">2025</span>
+            </div>
+            <h3 class="project-title">Climate Resilience Dashboard</h3>
+            <p class="project-desc">33 indicators across 4 goals — air quality, lake health, forest resilience, built systems. Embeddable chart pages feeding a CMS-driven platform used by agency staff and the public.</p>
+          </div>
+        </div>
+
+        <!-- Forest Health Thresholds -->
+        <div class="project-card" data-categories="dashboard dataviz trpa">
+          <div class="project-img-wrap project-thumb-forest">
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-dashboard">Dashboard</span>
+              <span class="tag tag-trpa">TRPA</span>
+              <span class="tag tag-year">2025</span>
+            </div>
+            <h3 class="project-title">Forest Health Thresholds</h3>
+            <p class="project-desc">A monitoring framework tracking forest condition indicators against science-based thresholds for the Tahoe basin — supporting TRPA's adaptive management of fire risk, tree mortality, and ecosystem resilience.</p>
+          </div>
+        </div>
 
       </div>
     </div>
@@ -194,25 +207,18 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-inner">
-        <div>
-          <span class="footer-logo">MTB</span>
-          <p class="footer-tagline">GIS · Cartography · Development</p>
+        <div class="footer-left">
+          <a href="mailto:masonbindl@gmail.com" class="footer-contact-link">
+            <i class="fa-solid fa-envelope"></i> masonbindl@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/masonbindl" class="footer-contact-link" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/mbindl" class="footer-contact-link" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i> GitHub
+          </a>
         </div>
-        <nav class="footer-nav">
-          <a href="work.html">Work</a>
-          <a href="about.html">About</a>
-          <a href="resume.html">Resume</a>
-          <a href="https://bluebasincartography.com" target="_blank" rel="noopener">Blue Basin</a>
-        </nav>
-        <div class="footer-social">
-          <a href="https://www.linkedin.com/in/masonbindl" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/mbindl" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
-          <a href="https://twitter.com/masonbindl" aria-label="Twitter" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
-          <a href="mailto:masonbindl@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <small>© 2026 Mason Bindl</small>
+        <small class="footer-copy">© 2026 Mason Bindl</small>
       </div>
     </div>
   </footer>
