@@ -166,6 +166,7 @@ img { display: block; max-width: 100%; }
 .hero {
   position: relative;
   min-height: calc(100vh - var(--nav-height));
+  min-height: calc(100svh - var(--nav-height));
   display: flex;
   align-items: center;
   background-color: var(--bg);
@@ -356,6 +357,7 @@ img { display: block; max-width: 100%; }
 }
 
 .project-card {
+  position: relative;
   background: var(--surface);
   border-radius: var(--radius-md);
   border: 1px solid var(--border-light);
@@ -365,6 +367,19 @@ img { display: block; max-width: 100%; }
   flex-direction: column;
   transition: box-shadow var(--transition), transform var(--transition);
 }
+
+/* Stretched link: the title anchor makes the whole card clickable */
+.project-card-link {
+  color: inherit;
+  transition: color var(--transition);
+}
+.project-card-link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+.project-card:hover .project-card-link { color: var(--primary); }
 .project-card:hover {
   box-shadow: var(--shadow-md);
   transform: translateY(-3px);
@@ -417,7 +432,7 @@ img { display: block; max-width: 100%; }
 
 .tag {
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   padding: 0.2rem 0.55rem;
   border-radius: var(--radius-sm);
   letter-spacing: 0.05em;
@@ -444,6 +459,7 @@ img { display: block; max-width: 100%; }
   margin-bottom: 0;
   flex: 1;
   line-height: 1.6;
+  max-width: 60ch;
 }
 
 /* Swiper controls */
@@ -891,7 +907,9 @@ img { display: block; max-width: 100%; }
    RESPONSIVE
    ============================================================ */
 @media (max-width: 767px) {
-  .hero-inner { padding: 3rem 0; }
+  /* Let the first project card peek above the fold instead of a full-screen hero */
+  .hero { min-height: auto; }
+  .hero-inner { padding: 2.5rem 0 3rem; }
   .hero-hex-cluster { display: none; }
   .footer-inner { flex-direction: column; gap: 1.5rem; }
   .section-portfolio,
@@ -900,6 +918,12 @@ img { display: block; max-width: 100%; }
   .resume-entry { grid-template-columns: 1fr; }
   .resume-entry-date { grid-column: 1; grid-row: auto; margin-bottom: 0.375rem; }
   .tools-grid { grid-template-columns: 1fr 1fr; }
+  /* Comfortable touch targets for the work-page filters */
+  .project-filters .filter-btn { padding: 0.65rem 1.15rem; }
+}
+
+@media (max-width: 439px) {
+  .tools-grid { grid-template-columns: 1fr; }
 }
 
 @media (min-width: 992px) {

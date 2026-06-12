@@ -42,11 +42,17 @@ function projectImageHtml(p, wide) {
     ? `<img src="${p.thumb}" alt="${p.alt || p.title}" class="project-img" loading="lazy">`
     : `<i class="fa-solid ${p.placeholder.icon} project-thumb-icon" aria-hidden="true"></i>`;
 
-  const wrap = `<div class="${wrapClasses.join(' ')}">${inner}${overlay}</div>`;
+  return `<div class="${wrapClasses.join(' ')}">${inner}${overlay}</div>`;
+}
 
-  if (!p.href) return wrap;
+// Whole card is clickable via a stretched link on the title
+function projectTitleHtml(p) {
+  if (!p.href) return `<h3 class="project-title">${p.title}</h3>`;
   const ext = p.external ? ' target="_blank" rel="noopener"' : '';
-  return `<a href="${p.href}" class="project-img-link"${ext}>${wrap}</a>`;
+  const extIcon = p.external
+    ? ' <i class="fa-solid fa-arrow-up-right-from-square fa-xs" aria-hidden="true"></i>'
+    : '';
+  return `<h3 class="project-title"><a href="${p.href}" class="project-card-link"${ext}>${p.title}${extIcon}</a></h3>`;
 }
 
 function projectCardHtml(p, { wide = false } = {}) {
@@ -57,7 +63,7 @@ function projectCardHtml(p, { wide = false } = {}) {
       ${projectImageHtml(p, wide)}
       <div class="project-body">
         ${projectTagsHtml(p)}
-        <h3 class="project-title">${p.title}</h3>
+        ${projectTitleHtml(p)}
         <p class="project-desc">${desc}</p>
         ${credit}
       </div>
