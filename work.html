@@ -4,8 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Work · Mason Bindl</title>
-  <meta name="description" content="Web maps, geospatial dashboards, and cartographic products by Mason Bindl — GIS Analyst at TRPA and Founder of Blue Basin Cartography.">
+  <meta name="description" content="Web maps, geospatial dashboards, and cartographic products by Mason Bindl, GIS Analyst at TRPA and Founder of Blue Basin Cartography.">
   <link rel="icon" href="/assets/mb_icon.ico">
+  <link rel="canonical" href="https://masonbindl.com/work.html">
+
+  <!-- Social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://masonbindl.com/work.html">
+  <meta property="og:title" content="Work · Mason Bindl">
+  <meta property="og:description" content="Web maps, geospatial dashboards, and cartographic products by Mason Bindl, GIS Analyst at TRPA and Founder of Blue Basin Cartography.">
+  <meta property="og:image" content="https://masonbindl.com/assets/climate_thumb.jpg">
+  <meta name="twitter:card" content="summary_large_image">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,9 +28,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- Custom -->
-  <link href="css/style.css?v=3" rel="stylesheet">
+  <link href="css/style.css?v=4" rel="stylesheet">
 </head>
 <body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-md fixed-top" id="mainNav">
@@ -46,12 +57,12 @@
   </nav>
 
   <!-- Page Header -->
-  <div class="page-header">
+  <div class="page-header" id="main">
     <div class="hex-bg" aria-hidden="true"></div>
     <div class="container" style="position:relative;z-index:2;">
       <span class="page-header-label">Work</span>
       <h1>Projects</h1>
-      <p>Web maps, dashboards, and cartographic products — from enterprise GIS at TRPA to custom map design at Blue Basin.</p>
+      <p>Web maps, dashboards, and cartographic products, from enterprise GIS at TRPA to custom map design at Blue Basin.</p>
     </div>
   </div>
 
@@ -61,145 +72,18 @@
 
       <!-- Filters -->
       <div class="project-filters">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="webmap">Web Maps</button>
-        <button class="filter-btn" data-filter="dashboard">Dashboards</button>
-        <button class="filter-btn" data-filter="carto">Cartography</button>
-        <button class="filter-btn" data-filter="dataviz">Data Viz</button>
-        <button class="filter-btn" data-filter="trpa">TRPA</button>
-        <button class="filter-btn" data-filter="bbc">Blue Basin</button>
+        <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-btn" data-filter="webmap" aria-pressed="false">Web Maps</button>
+        <button class="filter-btn" data-filter="dashboard" aria-pressed="false">Dashboards</button>
+        <button class="filter-btn" data-filter="carto" aria-pressed="false">Cartography</button>
+        <button class="filter-btn" data-filter="dataviz" aria-pressed="false">Data Viz</button>
+        <button class="filter-btn" data-filter="trpa" aria-pressed="false">TRPA</button>
+        <button class="filter-btn" data-filter="bbc" aria-pressed="false">Blue Basin</button>
       </div>
 
-      <!-- Grid -->
-      <div class="projects-grid">
-
-        <!-- Tahoe Planning Tools -->
-        <div class="project-card" data-categories="webmap trpa dataviz">
-          <a href="portfolio/tahoe-planning-tools.html" class="project-img-link">
-            <div class="project-img-wrap">
-              <img src="assets/TahoePlannerScreenCapture.png" alt="Tahoe Planning Tools" class="project-img">
-              <div class="project-img-overlay"><i class="fa-solid fa-arrow-right"></i></div>
-            </div>
-          </a>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag tag-webmap">Web Map</span>
-              <span class="tag tag-dataviz">Data Viz</span>
-              <span class="tag tag-trpa">TRPA</span>
-            </div>
-            <h3 class="project-title">Tahoe Planning Tools</h3>
-            <p class="project-desc">A suite of web maps, dashboards, and infographics supporting environmental planning in the Tahoe basin.</p>
-          </div>
-        </div>
-
-        <!-- Historic Imagery Swipe -->
-        <div class="project-card" data-categories="webmap trpa">
-          <a href="portfolio/historic-swipe.html" class="project-img-link">
-            <div class="project-img-wrap">
-              <img src="assets/HistoricSwipe_thumbnail.png" alt="Historic Imagery Swipe" class="project-img">
-              <div class="project-img-overlay"><i class="fa-solid fa-arrow-right"></i></div>
-            </div>
-          </a>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag tag-webmap">Web Map</span>
-              <span class="tag tag-trpa">TRPA</span>
-            </div>
-            <h3 class="project-title">Historic Imagery Swipe</h3>
-            <p class="project-desc">Interactive web map comparing current and historic aerial imagery of Lake Tahoe with a swipe interface.</p>
-          </div>
-        </div>
-
-        <!-- Traffic Count Interactive -->
-        <div class="project-card" data-categories="webmap dataviz trpa">
-          <a href="portfolio/traffic-count.html" class="project-img-link">
-            <div class="project-img-wrap">
-              <img src="assets/traffic_thumbnail.png" alt="Tahoe Traffic Count Interactive" class="project-img">
-              <div class="project-img-overlay"><i class="fa-solid fa-arrow-right"></i></div>
-            </div>
-          </a>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag tag-webmap">Web Map</span>
-              <span class="tag tag-dataviz">Data Viz</span>
-              <span class="tag tag-trpa">TRPA</span>
-            </div>
-            <h3 class="project-title">Tahoe Traffic Count Interactive</h3>
-            <p class="project-desc">Web mapping application visualizing historical traffic count data at stations around Lake Tahoe.</p>
-          </div>
-        </div>
-
-        <!-- Shaded Relief -->
-        <div class="project-card" data-categories="carto print">
-          <a href="portfolio/tahoerelief.html" class="project-img-link">
-            <div class="project-img-wrap">
-              <img src="assets/tahoeShadedRelief_thumbnail.png" alt="Shaded Relief of Tahoe" class="project-img">
-              <div class="project-img-overlay"><i class="fa-solid fa-arrow-right"></i></div>
-            </div>
-          </a>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag tag-carto">Cartography</span>
-              <span class="tag tag-print">Print</span>
-            </div>
-            <h3 class="project-title">Shaded Relief of Tahoe</h3>
-            <p class="project-desc">Terrain relief map of the Lake Tahoe basin designed as a mountain bike race course reference map.</p>
-          </div>
-        </div>
-
-        <!-- LTW Infographic -->
-        <div class="project-card" data-categories="dataviz carto trpa">
-          <a href="portfolio/infographic.html" class="project-img-link">
-            <div class="project-img-wrap">
-              <img src="assets/infographic_thumbnail.png" alt="Lake Tahoe West Infographic" class="project-img">
-              <div class="project-img-overlay"><i class="fa-solid fa-arrow-right"></i></div>
-            </div>
-          </a>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag tag-dataviz">Data Viz</span>
-              <span class="tag tag-carto">Cartography</span>
-              <span class="tag tag-trpa">TRPA</span>
-            </div>
-            <h3 class="project-title">Lake Tahoe West Infographic</h3>
-            <p class="project-desc">Narrative infographic documenting forest conditions and the ecological story of Tahoe's west shore.</p>
-          </div>
-        </div>
-
-        <!-- Climate Resilience Dashboard -->
-        <div class="project-card" data-categories="dashboard dataviz trpa">
-          <a href="https://climate.laketahoeinfo.org" class="project-img-link" target="_blank" rel="noopener">
-            <div class="project-img-wrap project-thumb-climate">
-              <div class="project-img-overlay"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-            </div>
-          </a>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag tag-dashboard">Dashboard</span>
-              <span class="tag tag-trpa">TRPA</span>
-              <span class="tag tag-year">2025</span>
-            </div>
-            <h3 class="project-title">Climate Resilience Dashboard</h3>
-            <p class="project-desc">33 indicators across 4 goals — air quality, lake health, forest resilience, built systems. Embeddable chart pages feeding a CMS-driven platform used by agency staff and the public.</p>
-          </div>
-        </div>
-
-        <!-- Forest Health Thresholds -->
-        <div class="project-card" data-categories="dashboard dataviz trpa">
-          <div class="project-img-wrap project-thumb-forest">
-          </div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag tag-dashboard">Dashboard</span>
-              <span class="tag tag-trpa">TRPA</span>
-              <span class="tag tag-year">2025</span>
-            </div>
-            <h3 class="project-title">Forest Health Thresholds</h3>
-            <p class="project-desc">A monitoring framework tracking forest condition indicators against science-based thresholds for the Tahoe basin — supporting TRPA's adaptive management of fire risk, tree mortality, and ecosystem resilience.</p>
-          </div>
-        </div>
-
-      </div>
+      <!-- Grid renders from js/projects.js -->
+      <div class="projects-grid" id="projects-grid"></div>
+      <noscript><p>Enable JavaScript to browse the project grid, or visit the projects directly: <a href="https://climate.laketahoeinfo.org">Climate Resilience Dashboard</a>, <a href="https://data.trpa.gov/regional-plan-tracking/">Regional Plan Tracking</a>, <a href="https://gis.trpa.org/permitreview/">Permit Review Tool</a>, <a href="https://bluebasincartography.com/products/spring-green">Driftless Region Map Series</a>.</p></noscript>
     </div>
   </div>
 
@@ -224,6 +108,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/projects.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

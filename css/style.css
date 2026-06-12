@@ -66,6 +66,44 @@ a:hover { color: var(--primary-h); }
 img { display: block; max-width: 100%; }
 
 /* ============================================================
+   ACCESSIBILITY
+   ============================================================ */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 2000;
+  background: var(--primary);
+  color: #fff;
+  padding: 0.625rem 1.25rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: 0 0 var(--radius-sm) 0;
+}
+.skip-link:focus {
+  left: 0;
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+  .project-card:hover { transform: none; }
+  .project-card:hover .project-img { transform: none; }
+  .btn-primary-custom:hover,
+  .contact-link:hover { transform: none; }
+}
+
+/* ============================================================
    NAVIGATION
    ============================================================ */
 #mainNav {
@@ -1094,6 +1132,7 @@ img { display: block; max-width: 100%; }
 }
 .project-detail-img-wrap img {
   width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -1180,6 +1219,18 @@ img { display: block; max-width: 100%; }
 }
 
 /* Dark placeholder thumbnails */
+.project-thumb-climate,
+.project-thumb-housing,
+.project-thumb-forest,
+.project-thumb-driftless {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-thumb-icon {
+  font-size: 2rem;
+  color: rgba(242,237,228,0.18);
+}
 .project-thumb-climate {
   background-color: #15232e;
 }
@@ -1237,6 +1288,59 @@ img { display: block; max-width: 100%; }
   letter-spacing: 0.04em;
   margin-top: 0.875rem;
   margin-bottom: 0;
+}
+
+/* ============================================================
+   RESUME — SAVE AS PDF
+   ============================================================ */
+.resume-print-btn {
+  background: transparent;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+    padding-top: 0;
+    font-size: 11pt;
+  }
+  #mainNav,
+  .site-footer,
+  .skip-link,
+  .resume-print-btn,
+  .hex-bg { display: none !important; }
+
+  .page-header {
+    background: #fff;
+    padding: 0 0 0.5rem;
+  }
+  .page-header h1 { color: #000; font-size: 20pt; }
+  .page-header p { color: #333; }
+  .page-header-label { color: #555; }
+
+  .page-content { padding: 0.5rem 0 0; }
+  .resume-section { margin-bottom: 1.5rem; }
+  .resume-section-title { color: #000; border-color: #999; }
+  .resume-entry { break-inside: avoid; border-color: #ddd; margin-bottom: 1.25rem; padding-bottom: 1.25rem; }
+  .resume-entry p, .resume-entry ul li { color: #222; }
+  .resume-entry-date, .resume-entry-org { color: #555; }
+  .tool-group { background: #fff; border-color: #ccc; break-inside: avoid; }
+  .tool-group ul li { color: #333; }
+
+  .page-content a {
+    color: #000;
+    border-bottom: none !important;
+    text-decoration: none;
+  }
+  /* Show destinations for the project links on paper */
+  .resume-entry ul a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 8pt;
+    color: #666;
+    word-break: break-all;
+  }
 }
 
 /* Footer — email + LinkedIn + GitHub left, copyright right */

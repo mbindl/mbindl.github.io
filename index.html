@@ -4,17 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mason Bindl · GIS & Cartography</title>
-  <meta name="description" content="Mason Bindl — GIS Analyst & Developer at TRPA and Founder of Blue Basin Cartography. Web maps, geospatial data, and custom cartography in Lake Tahoe.">
+  <meta name="description" content="Mason Bindl, GIS Analyst & Developer at TRPA and Founder of Blue Basin Cartography. Web maps, geospatial data, and custom cartography in Lake Tahoe.">
   <link rel="icon" href="/assets/mb_icon.ico">
+  <link rel="canonical" href="https://masonbindl.com/">
 
-  <!-- GA4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118279866-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-118279866-2');
-  </script>
+  <!-- Social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://masonbindl.com/">
+  <meta property="og:title" content="Mason Bindl · GIS & Cartography">
+  <meta property="og:description" content="GIS Analyst & Developer at TRPA and Founder of Blue Basin Cartography. Web maps, geospatial data, and custom cartography in Lake Tahoe.">
+  <meta property="og:image" content="https://masonbindl.com/assets/climate_thumb.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Analytics: the old UA-118279866-2 tag stopped working when Universal
+       Analytics shut down (July 2023). To restore analytics, create a GA4
+       property and paste its gtag.js snippet (a G-XXXXXXXXXX id) here. -->
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,9 +32,47 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- Custom -->
-  <link href="css/style.css?v=3" rel="stylesheet">
+  <link href="css/style.css?v=4" rel="stylesheet">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mason Bindl",
+    "url": "https://masonbindl.com/",
+    "jobTitle": "GIS Analyst & Developer",
+    "worksFor": {
+      "@type": "GovernmentOrganization",
+      "name": "Tahoe Regional Planning Agency",
+      "url": "https://www.trpa.gov"
+    },
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Blue Basin Cartography",
+      "url": "https://bluebasincartography.com"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "South Lake Tahoe",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of Wisconsin-Madison" },
+      { "@type": "CollegeOrUniversity", "name": "University of Wisconsin-Milwaukee" }
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/masonbindl",
+      "https://github.com/mbindl",
+      "https://bluebasincartography.com"
+    ]
+  }
+  </script>
 </head>
 <body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-md fixed-top" id="mainNav">
@@ -55,7 +97,7 @@
   </nav>
 
   <!-- Hero -->
-  <section class="hero">
+  <section class="hero" id="main">
     <div class="hex-bg" aria-hidden="true"></div>
     <div class="container">
       <div class="hero-inner">
@@ -86,61 +128,13 @@
       <div class="section-header">
         <span class="section-label">Featured Work</span>
         <h2 class="section-title">Selected Projects</h2>
-        <p class="section-desc">A few recent highlights — web maps, dashboards, and cartographic products from TRPA and Blue Basin Cartography.</p>
+        <p class="section-desc">A few recent highlights: web maps, dashboards, and cartographic products from TRPA and Blue Basin Cartography.</p>
       </div>
 
-      <div class="featured-grid">
-
-        <!-- Climate Resilience Dashboard -->
-        <div class="project-card">
-          <a href="https://climate.laketahoeinfo.org" class="project-img-link" target="_blank" rel="noopener">
-            <div class="project-img-wrap project-thumb-climate">
-              <div class="project-img-overlay"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-            </div>
-          </a>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag tag-dashboard">Dashboard</span>
-              <span class="tag tag-trpa">TRPA</span>
-              <span class="tag tag-year">2025</span>
-            </div>
-            <h3 class="project-title">Climate Resilience Dashboard</h3>
-            <p class="project-desc">33 indicators across 4 goals — air quality, lake health, forest resilience, built systems. Embeddable chart pages feeding a CMS-driven platform used by agency staff and the public.</p>
-          </div>
-        </div>
-
-        <!-- Forest Health Thresholds -->
-        <div class="project-card">
-          <div class="project-img-wrap project-thumb-forest">
-          </div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag tag-dashboard">Dashboard</span>
-              <span class="tag tag-trpa">TRPA</span>
-              <span class="tag tag-year">2025</span>
-            </div>
-            <h3 class="project-title">Forest Health Thresholds</h3>
-            <p class="project-desc">A monitoring framework tracking forest condition indicators against science-based thresholds for the Tahoe basin — supporting TRPA's adaptive management of fire risk, tree mortality, and ecosystem resilience.</p>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Driftless card — full width, image left / text right -->
-      <div class="project-card project-card-wide">
-        <div class="project-img-wrap project-thumb-driftless project-wide-img" aria-label="Driftless Region Map placeholder">
-        </div>
-        <div class="project-body">
-          <div class="project-tags">
-            <span class="tag tag-carto">Cartography</span>
-            <span class="tag tag-print">Print</span>
-            <span class="tag tag-commission">Commission</span>
-          </div>
-          <h3 class="project-title">Driftless Region Map Series</h3>
-          <p class="project-desc">Three commissioned maps of Wisconsin's Driftless Region — the Lower Wisconsin Riverway, Kickapoo River Valley, and Spring Green area — drawn in the graphic language of Frank Lloyd Wright's Prairie School. Wright spent his life in Spring Green; the maps borrow his organic forms, earthen palette, and reverence for the land's horizontal character. Made in ArcGIS Pro and Illustrator through Blue Basin Cartography.</p>
-          <p class="project-credit">Blue Basin Cartography</p>
-        </div>
-      </div>
+      <!-- Cards render from js/projects.js -->
+      <div class="featured-grid" id="featured-grid"></div>
+      <div id="featured-wide"></div>
+      <noscript><p>Enable JavaScript to see featured projects, or browse them on the <a href="work.html">Work page</a>.</p></noscript>
 
       <div class="featured-cta">
         <a href="work.html" class="btn-outline-custom">
@@ -161,7 +155,6 @@
             <h3>Tahoe Regional Planning Agency</h3>
             <p class="identity-role">GIS/Data Analyst · Stateline, NV</p>
             <p>Building the digital framework for Tahoe’s future. I design the data systems and visualizations that transform static environmental records into actionable insights for planners and the public. My focus is on building the technical foundations that support sustainable regional planning and transparent decision-making across the watershed.</p>
-            </div>
             <div class="identity-stack">
               <span class="stack-tag">ArcGIS Enterprise</span>
               <span class="stack-tag">Python</span>
@@ -179,7 +172,7 @@
             <span class="identity-label">Independent</span>
             <h3>Blue Basin Cartography</h3>
             <p class="identity-role">Founder &amp; Cartographer · South Lake Tahoe, CA</p>
-            <p>Custom cartographic design and map production studio. Creating beautiful, functional maps for clients who need to communicate place, data, and story — from print maps to interactive web cartography.</p>
+            <p>Custom cartographic design and map production studio. Creating beautiful, functional maps for clients who need to communicate place, data, and story, from print maps to interactive web cartography.</p>
             <div class="identity-stack">
               <span class="stack-tag">Adobe Illustrator</span>
               <span class="stack-tag">QGIS</span>
@@ -240,6 +233,7 @@
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/projects.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

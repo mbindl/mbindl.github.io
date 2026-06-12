@@ -4,8 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Resume · Mason Bindl</title>
-  <meta name="description" content="Resume of Mason Bindl — GIS Analyst, Developer, and Cartographer.">
+  <meta name="description" content="Resume of Mason Bindl, GIS Analyst, Developer, and Cartographer.">
   <link rel="icon" href="/assets/mb_icon.ico">
+  <link rel="canonical" href="https://masonbindl.com/resume.html">
+
+  <!-- Social sharing -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://masonbindl.com/resume.html">
+  <meta property="og:title" content="Resume · Mason Bindl">
+  <meta property="og:description" content="Resume of Mason Bindl, GIS Analyst, Developer, and Cartographer.">
+  <meta property="og:image" content="https://masonbindl.com/assets/climate_thumb.jpg">
+  <meta name="twitter:card" content="summary_large_image">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,36 +28,27 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- Custom -->
-  <link href="css/style.css?v=2" rel="stylesheet">
+  <link href="css/style.css?v=4" rel="stylesheet">
 </head>
 <body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="/">MTB</a>
+      <a class="navbar-brand" href="/">Mason Bindl</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="work.html">Work</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="resume.html">Resume</a></li>
           <li class="nav-item">
             <a class="nav-link nav-link-bbc" href="https://bluebasincartography.com" target="_blank" rel="noopener">
               Blue Basin <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
-            </a>
-          </li>
-        </ul>
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link nav-icon" href="https://www.linkedin.com/in/masonbindl" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-icon" href="https://github.com/mbindl" target="_blank" rel="noopener" aria-label="GitHub">
-              <i class="fab fa-github"></i>
             </a>
           </li>
         </ul>
@@ -57,12 +57,15 @@
   </nav>
 
   <!-- Page Header -->
-  <div class="page-header">
+  <div class="page-header" id="main">
     <div class="hex-bg" aria-hidden="true"></div>
     <div class="container" style="position:relative;z-index:2;">
-      <span class="page-header-label">// resume</span>
+      <span class="page-header-label">Resume</span>
       <h1>Resume</h1>
       <p>GIS Analyst &amp; Developer with 15+ years of experience across planning, natural resources, and cartography.</p>
+      <button type="button" class="project-detail-link project-detail-link-outline resume-print-btn" onclick="window.print()">
+        <i class="fa-solid fa-file-pdf fa-sm"></i> Save as PDF
+      </button>
     </div>
   </div>
 
@@ -87,10 +90,10 @@
               <div class="tool-group">
                 <div class="tool-group-title"><i class="fa-solid fa-database"></i> Data &amp; Databases</div>
                 <ul>
-                  <li>ArcGIS Enterprise / Server</li>
+                  <li>ArcGIS Enterprise / Online</li>
                   <li>SQL Server / PostgreSQL</li>
-                  <li>PostGIS</li>
-                  <li>ArcSDE</li>
+                  <li>PostGIS / Spatial SQL</li>
+                  <li>ETL &amp; data pipelines</li>
                   <li>GDAL / OGR</li>
                 </ul>
               </div>
@@ -98,10 +101,10 @@
                 <div class="tool-group-title"><i class="fa-solid fa-laptop-code"></i> Web Development</div>
                 <ul>
                   <li>JavaScript / HTML / CSS</li>
-                  <li>Leaflet.js</li>
-                  <li>MapLibre GL JS</li>
-                  <li>ArcGIS JS API</li>
-                  <li>Bootstrap</li>
+                  <li>ArcGIS Maps SDK for JS</li>
+                  <li>Leaflet / MapLibre GL JS</li>
+                  <li>Plotly.js / charting</li>
+                  <li>REST services / GeoJSON</li>
                 </ul>
               </div>
               <div class="tool-group">
@@ -111,7 +114,7 @@
                   <li>ArcGIS API for Python</li>
                   <li>Pandas / GeoPandas</li>
                   <li>Plotly / Dash</li>
-                  <li>GDAL / Shapely</li>
+                  <li>Jupyter Notebooks</li>
                 </ul>
               </div>
               <div class="tool-group">
@@ -125,21 +128,21 @@
                 </ul>
               </div>
               <div class="tool-group">
-                <div class="tool-group-title"><i class="fa-solid fa-mobile-screen"></i> Mobile &amp; Field</div>
+                <div class="tool-group-title"><i class="fa-solid fa-mobile-screen"></i> Apps &amp; Field</div>
                 <ul>
                   <li>ArcGIS Survey123</li>
-                  <li>ArcGIS Collector</li>
-                  <li>Field Maps</li>
-                  <li>GPS data collection</li>
+                  <li>ArcGIS Field Maps</li>
+                  <li>StoryMaps / Dashboards / Experience Builder</li>
+                  <li>Field workflow design</li>
                 </ul>
               </div>
               <div class="tool-group">
                 <div class="tool-group-title"><i class="fa-brands fa-git-alt"></i> Dev &amp; PM</div>
                 <ul>
                   <li>Git / GitHub</li>
-                  <li>Jupyter Notebooks</li>
-                  <li>VS Code / PyCharm</li>
-                  <li>Agile / project mgmt</li>
+                  <li>AI-assisted development (Claude Code)</li>
+                  <li>Agile / project management</li>
+                  <li>Technical documentation</li>
                 </ul>
               </div>
             </div>
@@ -159,7 +162,7 @@
 
             <div class="resume-entry">
               <div class="resume-entry-main">
-                <h4><a href="https://uwm.edu/geography/undergraduate/major/geographical-information-track/" target="_blank" rel="noopener">B.S. Geography – Geographic Information Science</a></h4>
+                <h4><a href="https://uwm.edu/geography/undergraduate/" target="_blank" rel="noopener">B.S. Geography – Geographic Information Science</a></h4>
                 <p class="resume-entry-org">University of Wisconsin–Milwaukee</p>
               </div>
               <div class="resume-entry-date">2010</div>
@@ -191,11 +194,11 @@
                 <h4>GIS Analyst &amp; Developer</h4>
                 <p class="resume-entry-org">Tahoe Regional Planning Agency &nbsp;·&nbsp; Stateline, NV</p>
                 <p>
-                  Manage all aspects of the ArcGIS Enterprise deployment — federated Server, Portal, and Data Store on ArcSDE with SQL Server. Lead the agency's modern data management practices and web mapping development, building tools that support environmental review, forest health restoration, and permit planning.
+                  Manage all aspects of the ArcGIS Enterprise deployment: federated Server, Portal, and Data Store on ArcSDE with SQL Server. Lead the agency's modern data management practices and web mapping development, building tools that support environmental review, forest health restoration, and permit planning.
                 </p>
                 <ul>
                   <li>Coordinated the first annual Tahoe GIS User Group meeting, connecting GIS professionals across the region</li>
-                  <li>Scripted the <a href="https://github.com/trpa-agency/ParcelUpdate/blob/master/Parcel%20Update%20-%20Spring%202019.ipynb" target="_blank" rel="noopener">parcel update process</a> in Python — reliable, repeatable, and now a core agency workflow</li>
+                  <li>Scripted the <a href="https://github.com/trpa-agency/ParcelUpdate/blob/master/Parcel%20Update%20-%20Spring%202019.ipynb" target="_blank" rel="noopener">parcel update process</a> in Python: reliable, repeatable, and now a core agency workflow</li>
                   <li>Built a <a href="https://gis.trpa.org/PermitReview" target="_blank" rel="noopener">permit review web application</a> using custom geoprocessing tools to intersect project boundaries with constraint layers</li>
                   <li>Developed the <a href="https://gis.trpa.org/LakeTahoeWest" target="_blank" rel="noopener">Lake Tahoe West web application</a> for the forest health restoration partnership</li>
                   <li>Built a <a href="https://gis.trpa.org/LCV" target="_blank" rel="noopener">land capability verification tool</a> that auto-calculates impervious coverage allowances via a custom geoprocessing service</li>
@@ -213,7 +216,7 @@
                 <p class="resume-entry-org">El Dorado National Forest, United States Forest Service &nbsp;·&nbsp; Placerville, CA</p>
                 <p>Maintained the Forest's enterprise geodatabase. Supported environmental review, timber, fire, and ecology teams with GIS analysis and mapping. Deployed on active wildland fire and burned area emergency rehabilitation teams.</p>
                 <ul>
-                  <li>Managed GIS for the King Fire Burned Area Emergency Rehabilitation team — deployed mobile data collection, mapped critical infrastructure, and assessed landslide risk from burn severity data</li>
+                  <li>Managed GIS for the King Fire Burned Area Emergency Rehabilitation team: deployed mobile data collection, mapped critical infrastructure, and assessed landslide risk from burn severity data</li>
                   <li>Provided GIS support to multiple landscape-scale collaborative forest health restoration partnerships</li>
                 </ul>
               </div>
@@ -291,24 +294,18 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-inner">
-        <div>
-          <span class="footer-logo">MTB</span>
-          <p class="footer-tagline">GIS · Cartography · Development</p>
+        <div class="footer-left">
+          <a href="mailto:masonbindl@gmail.com" class="footer-contact-link">
+            <i class="fa-solid fa-envelope"></i> masonbindl@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/masonbindl" class="footer-contact-link" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/mbindl" class="footer-contact-link" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i> GitHub
+          </a>
         </div>
-        <nav class="footer-nav">
-          <a href="work.html">Work</a>
-          <a href="about.html">About</a>
-          <a href="https://bluebasincartography.com" target="_blank" rel="noopener">Blue Basin</a>
-        </nav>
-        <div class="footer-social">
-          <a href="https://www.linkedin.com/in/masonbindl" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/mbindl" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
-          <a href="https://twitter.com/masonbindl" aria-label="Twitter" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
-          <a href="mailto:masonbindl@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <small>© 2026 Mason Bindl</small>
+        <small class="footer-copy">© 2026 Mason Bindl</small>
       </div>
     </div>
   </footer>
