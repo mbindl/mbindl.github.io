@@ -35,8 +35,7 @@ const PROJECTS = [
     year: 2025,
     thumb: 'assets/climate_thumb.jpg',
     alt: 'Climate Resilience Dashboard goals and outcomes: four goals spanning climate conditions, resilient environment, built environment, and community resilience',
-    href: 'https://climate.laketahoeinfo.org',
-    external: true,
+    href: 'portfolio/climate-dashboard.html',
     featured: true,
   },
   {
@@ -75,8 +74,7 @@ const PROJECTS = [
     categories: ['dashboard', 'dataviz', 'trpa'],
     thumb: 'assets/regionalplan_thumb.jpg',
     alt: 'Regional Plan Tracking dashboard showing residential allocations, bonus units, commercial floor area, and tourist accommodation against Regional Plan caps',
-    href: 'https://data.trpa.gov/regional-plan-tracking/',
-    external: true,
+    href: 'portfolio/regional-plan-tracking.html',
   },
   {
     id: 'permit-review',

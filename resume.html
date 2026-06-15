@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Theme: applied before paint to avoid flash -->
+  <script>(function(){var t;try{t=localStorage.getItem('theme');}catch(e){}if(!t){t=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}document.documentElement.setAttribute('data-theme',t);})();function toggleTheme(){var d=document.documentElement,n=d.getAttribute('data-theme')==='dark'?'light':'dark';d.setAttribute('data-theme',n);try{localStorage.setItem('theme',n);}catch(e){}}</script>
   <title>Resume · Mason Bindl</title>
   <meta name="description" content="Resume of Mason Bindl, GIS Analyst, Developer, and Cartographer.">
   <link rel="icon" href="/assets/mb_icon.ico">
@@ -28,7 +30,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- Custom -->
-  <link href="css/style.css?v=6" rel="stylesheet">
+  <link href="css/style.css?v=8" rel="stylesheet">
 </head>
 <body>
 
@@ -51,6 +53,10 @@
             <a class="nav-link nav-link-bbc" href="https://bluebasincartography.com" target="_blank" rel="noopener">
               Blue Basin <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
             </a>
+          </li>          <li class="nav-item">
+            <button type="button" class="nav-link theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+              <i class="fa-solid fa-moon icon-moon" aria-hidden="true"></i><i class="fa-solid fa-sun icon-sun" aria-hidden="true"></i>
+            </button>
           </li>
         </ul>
       </div>

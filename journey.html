@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Theme: applied before paint to avoid flash -->
+  <script>(function(){var t;try{t=localStorage.getItem('theme');}catch(e){}if(!t){t=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}document.documentElement.setAttribute('data-theme',t);})();function toggleTheme(){var d=document.documentElement,n=d.getAttribute('data-theme')==='dark'?'light':'dark';d.setAttribute('data-theme',n);try{localStorage.setItem('theme',n);}catch(e){}}</script>
   <title>The Journey · Mason Bindl</title>
   <meta name="description" content="An interactive story map of a GIS career: from the Driftless Hills of Wisconsin to the Sierra Nevada, told one place at a time.">
   <link rel="icon" href="/assets/mb_icon.ico">
@@ -31,7 +33,7 @@
   <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
 
   <!-- Custom -->
-  <link href="css/style.css?v=6" rel="stylesheet">
+  <link href="css/style.css?v=8" rel="stylesheet">
 </head>
 <body class="journey-body">
 
@@ -54,6 +56,10 @@
             <a class="nav-link nav-link-bbc" href="https://bluebasincartography.com" target="_blank" rel="noopener">
               Blue Basin <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
             </a>
+          </li>          <li class="nav-item">
+            <button type="button" class="nav-link theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+              <i class="fa-solid fa-moon icon-moon" aria-hidden="true"></i><i class="fa-solid fa-sun icon-sun" aria-hidden="true"></i>
+            </button>
           </li>
         </ul>
       </div>
@@ -67,10 +73,12 @@
   <main id="main" class="journey-scroll">
 
     <header class="journey-intro">
-      <span class="section-label">The Journey</span>
-      <h1>Every career is a map.</h1>
-      <p>Mine runs from the Driftless Hills of Wisconsin to the Sierra Nevada: map libraries, black bears, wildfires, and twenty years of making geography legible. Scroll to travel it.</p>
-      <span class="journey-scroll-cue" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+      <div class="journey-intro-card">
+        <span class="section-label">The Journey</span>
+        <h1>Every career is a map.</h1>
+        <p>Mine runs from the Driftless Hills of Wisconsin to the Sierra Nevada: map libraries, black bears, wildfires, and twenty years of making geography legible. Scroll to travel it.</p>
+        <span class="journey-scroll-cue" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+      </div>
     </header>
 
     <section class="journey-chapter" data-chapter="0">

@@ -165,13 +165,30 @@ img { display: block; max-width: 100%; }
    ============================================================ */
 .hero {
   position: relative;
-  min-height: calc(100vh - var(--nav-height));
-  min-height: calc(100svh - var(--nav-height));
+  min-height: calc(78vh - var(--nav-height));
+  min-height: calc(78svh - var(--nav-height));
   display: flex;
   align-items: center;
   background-color: var(--bg);
   overflow: hidden;
 }
+
+/* Scroll cue nudging visitors past the hero into the work */
+.hero-scroll-cue {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+.hero-scroll-cue i { animation: journey-bounce 1.8s ease-in-out infinite; }
+.hero-scroll-cue:hover { color: var(--primary); }
 
 .hex-bg {
   position: absolute;
@@ -1315,6 +1332,53 @@ img { display: block; max-width: 100%; }
 }
 
 /* ============================================================
+   HOMEPAGE — JOURNEY TEASER BAND
+   ============================================================ */
+.section-journey-teaser {
+  padding: 5rem 0;
+  background-color: var(--bg-alt);
+  border-top: 1px solid var(--border-light);
+}
+.journey-teaser-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 3rem;
+}
+.journey-teaser-copy h2 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0.25rem 0 1rem;
+}
+.journey-teaser-copy p {
+  color: var(--text-muted);
+  max-width: 46ch;
+  margin-bottom: 1.75rem;
+  line-height: 1.7;
+}
+.journey-teaser-route svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.journey-teaser-route .tr-route {
+  stroke-dasharray: 4 7;
+  animation: tr-dash 18s linear infinite;
+}
+@keyframes tr-dash {
+  to { stroke-dashoffset: -220; }
+}
+@media (max-width: 767px) {
+  .section-journey-teaser { padding: 3.5rem 0; }
+  .journey-teaser-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .journey-teaser-route { order: -1; max-width: 360px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .journey-teaser-route .tr-route { animation: none; }
+}
+
+/* ============================================================
    JOURNEY PAGE — SCROLL-DRIVEN STORY MAP
    ============================================================ */
 .journey-body { background: #E8E4DA; }
@@ -1342,8 +1406,16 @@ img { display: block; max-width: 100%; }
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 560px;
+  max-width: 620px;
   padding: 3rem clamp(1.25rem, 6vw, 5rem);
+}
+.journey-intro-card {
+  background: rgba(250, 250, 246, 0.92);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  padding: 2rem 2.25rem 2.25rem;
+  backdrop-filter: blur(3px);
 }
 .journey-intro h1 {
   font-size: clamp(2rem, 5vw, 3.25rem);
@@ -1430,6 +1502,21 @@ img { display: block; max-width: 100%; }
   flex-wrap: wrap;
   gap: 0.75rem;
   margin-top: 1.25rem;
+}
+
+/* Journey cards/intro stay light (they float over the light basemap), so
+   pin their text to dark values in BOTH themes. Without this, dark mode
+   flips --text to cream and the text vanishes on the cream cards. */
+.journey-card,
+.journey-card p,
+.journey-card h2,
+.journey-intro-card,
+.journey-intro-card h1 { color: #1E1E1A; }
+.journey-card .journey-years,
+.journey-intro-card p { color: #6B6B65; }
+.journey-card .btn-outline-custom {
+  color: #1E1E1A;
+  border-color: #D8D0C4;
 }
 
 /* Numbered hex markers on the map */
@@ -1570,3 +1657,62 @@ img { display: block; max-width: 100%; }
   .footer-inner { flex-direction: column; align-items: flex-start; }
   .footer-left { flex-direction: column; gap: 0.75rem; }
 }
+
+/* ============================================================
+   THEME TOGGLE BUTTON
+   ============================================================ */
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  color: rgba(242,237,228,0.7);
+  padding: 0.5rem 0.7rem;
+  transition: color var(--transition);
+}
+.theme-toggle:hover { color: #F2EDE4; }
+.theme-toggle .icon-sun { display: none; }
+[data-theme="dark"] .theme-toggle .icon-sun { display: inline; }
+[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+
+/* ============================================================
+   DARK MODE
+   ============================================================ */
+[data-theme="dark"] {
+  --bg:           #12130E;
+  --bg-alt:       #1A1C15;
+  --surface:      #1E211A;
+  --text:         #F2EDE4;
+  --text-muted:   #A6A89C;
+  --border:       #34372B;
+  --border-light: #2A2D22;
+  --shadow-sm:    0 1px 3px rgba(0,0,0,0.45);
+  --shadow-md:    0 6px 20px rgba(0,0,0,0.55);
+}
+
+/* Nav and footer ride a permanently dark bar; their hover state used
+   var(--bg) (a light cream in light mode) which would vanish in dark.
+   Pin those hovers to cream. */
+[data-theme="dark"] #mainNav .nav-link:hover,
+[data-theme="dark"] .footer-nav a:hover,
+[data-theme="dark"] .footer-contact-link:hover,
+[data-theme="dark"] .footer-social a:hover { color: #F2EDE4; }
+
+/* Project tags: flip dark text to light tints on dark surfaces */
+[data-theme="dark"] .tag-webmap    { background: rgba(120,170,210,0.16); color: #9FC4E0; }
+[data-theme="dark"] .tag-carto     { background: rgba(180,150,110,0.16); color: #D2B48C; }
+[data-theme="dark"] .tag-dataviz   { background: rgba(170,130,170,0.16); color: #CBA3CB; }
+[data-theme="dark"] .tag-trpa      { background: rgba(125,184,125,0.16); color: #9FCF9F; }
+[data-theme="dark"] .tag-bbc       { background: rgba(214,140,80,0.18);  color: #E0A878; }
+[data-theme="dark"] .tag-print     { background: rgba(160,140,115,0.16); color: #CBB89A; }
+[data-theme="dark"] .tag-dashboard { background: rgba(110,150,190,0.16); color: #9FC0E0; }
+[data-theme="dark"] .tag-housing   { background: rgba(150,120,190,0.16); color: #BCA3DE; }
+[data-theme="dark"] .tag-commission{ background: rgba(170,120,80,0.16);  color: #D6A878; }
+[data-theme="dark"] .tag-year      { background: rgba(255,255,255,0.08);  color: var(--text-muted); }
+
+/* Inline content links: lighten the underline tint */
+[data-theme="dark"] .page-content a { border-bottom-color: rgba(191,91,24,0.5); }
+
+/* Journey page is map-dominant and stays light; just darken any gaps */
+[data-theme="dark"] .journey-body { background: #0E0F0A; }

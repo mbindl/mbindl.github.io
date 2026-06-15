@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Theme: applied before paint to avoid flash -->
+  <script>(function(){var t;try{t=localStorage.getItem('theme');}catch(e){}if(!t){t=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}document.documentElement.setAttribute('data-theme',t);})();function toggleTheme(){var d=document.documentElement,n=d.getAttribute('data-theme')==='dark'?'light':'dark';d.setAttribute('data-theme',n);try{localStorage.setItem('theme',n);}catch(e){}}</script>
   <title>Mason Bindl · GIS & Cartography</title>
   <meta name="description" content="Mason Bindl, GIS Analyst & Developer at TRPA and Founder of Blue Basin Cartography. Web maps, geospatial data, and custom cartography in Lake Tahoe.">
   <link rel="icon" href="/assets/mb_icon.ico">
@@ -32,7 +34,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- Custom -->
-  <link href="css/style.css?v=6" rel="stylesheet">
+  <link href="css/style.css?v=8" rel="stylesheet">
 
   <!-- Structured data -->
   <script type="application/ld+json">
@@ -91,6 +93,10 @@
             <a class="nav-link nav-link-bbc" href="https://bluebasincartography.com" target="_blank" rel="noopener">
               Blue Basin <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
             </a>
+          </li>          <li class="nav-item">
+            <button type="button" class="nav-link theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+              <i class="fa-solid fa-moon icon-moon" aria-hidden="true"></i><i class="fa-solid fa-sun icon-sun" aria-hidden="true"></i>
+            </button>
           </li>
         </ul>
       </div>
@@ -111,6 +117,7 @@
             Blue Basin Cartography <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
           </a>
         </div>
+        <a href="#portfolio" class="hero-scroll-cue">Scroll to explore <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
       </div>
     </div>
     <!-- Decorative nested hexagons -->
@@ -185,6 +192,33 @@
               bluebasincartography.com <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
             </a>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Journey teaser -->
+  <section class="section-journey-teaser">
+    <div class="container">
+      <div class="journey-teaser-grid">
+        <div class="journey-teaser-copy">
+          <span class="section-label">The Journey</span>
+          <h2>From the Driftless Hills to the Sierra</h2>
+          <p>Two decades and nine places, told as an interactive story map: map libraries, black bears, wildfires, and the long road to Tahoe.</p>
+          <a href="journey.html" class="btn-primary-custom">Explore the journey <i class="fa-solid fa-arrow-right fa-sm"></i></a>
+        </div>
+        <div class="journey-teaser-route" aria-hidden="true">
+          <svg viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg">
+            <path class="tr-route" d="M28,46 C96,18 104,118 168,92 S262,150 296,150"
+                  fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" opacity="0.75"/>
+            <g stroke="var(--bg-alt)" stroke-width="2">
+              <polygon points="28,37 36,42 36,51 28,55 20,51 20,42" fill="var(--secondary)"/>
+              <polygon points="96,55 104,60 104,69 96,73 88,69 88,60" fill="var(--secondary)"/>
+              <polygon points="168,83 176,88 176,97 168,101 160,97 160,88" fill="var(--accent)"/>
+              <polygon points="232,123 240,128 240,137 232,141 224,137 224,128" fill="var(--primary)"/>
+              <polygon points="296,141 304,146 304,155 296,159 288,155 288,146" fill="var(--primary)"/>
+            </g>
+          </svg>
         </div>
       </div>
     </div>
